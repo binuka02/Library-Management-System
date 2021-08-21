@@ -53,6 +53,7 @@ namespace Login_2
             {
                 new Dashboard().Show();
                 this.Hide();
+                //frvrevweq
             }
 
             else 
