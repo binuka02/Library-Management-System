@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace Login_2
 {
-    public partial class View_Books : Form
+    public partial class Issue_Book : Form
     {
-        public View_Books()
+        public Issue_Book()
         {
             InitializeComponent();
         }
 
-        private void lblExit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Issue_Book_Load(object sender, EventArgs e)
         {
 
         }

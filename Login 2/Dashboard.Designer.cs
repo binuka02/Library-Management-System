@@ -67,7 +67,7 @@ namespace Login_2
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(874, 290);
+            this.label3.Location = new System.Drawing.Point(874, 353);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(278, 101);
             this.label3.TabIndex = 1;
@@ -79,7 +79,7 @@ namespace Login_2
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(713, 189);
+            this.label2.Location = new System.Drawing.Point(713, 255);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(304, 101);
             this.label2.TabIndex = 1;
@@ -92,7 +92,7 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(879, 121);
+            this.label1.Location = new System.Drawing.Point(879, 187);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 68);
             this.label1.TabIndex = 1;
@@ -121,7 +121,7 @@ namespace Login_2
             this.btnBorrower.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrower.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrower.ForeColor = System.Drawing.Color.White;
-            this.btnBorrower.Location = new System.Drawing.Point(1013, 12);
+            this.btnBorrower.Location = new System.Drawing.Point(716, 12);
             this.btnBorrower.Name = "btnBorrower";
             this.btnBorrower.Size = new System.Drawing.Size(120, 42);
             this.btnBorrower.TabIndex = 0;
@@ -138,7 +138,7 @@ namespace Login_2
             this.btnCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategories.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategories.ForeColor = System.Drawing.Color.White;
-            this.btnCategories.Location = new System.Drawing.Point(887, 12);
+            this.btnCategories.Location = new System.Drawing.Point(856, 12);
             this.btnCategories.Name = "btnCategories";
             this.btnCategories.Size = new System.Drawing.Size(120, 42);
             this.btnCategories.TabIndex = 0;
@@ -155,7 +155,7 @@ namespace Login_2
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1148, 12);
+            this.button4.Location = new System.Drawing.Point(1137, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(120, 60);
             this.button4.TabIndex = 0;
@@ -172,7 +172,7 @@ namespace Login_2
             this.btnTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTransaction.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransaction.ForeColor = System.Drawing.Color.White;
-            this.btnTransaction.Location = new System.Drawing.Point(730, 12);
+            this.btnTransaction.Location = new System.Drawing.Point(993, 12);
             this.btnTransaction.Name = "btnTransaction";
             this.btnTransaction.Size = new System.Drawing.Size(138, 42);
             this.btnTransaction.TabIndex = 0;
@@ -189,7 +189,7 @@ namespace Login_2
             this.btnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBooks.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooks.ForeColor = System.Drawing.Color.White;
-            this.btnBooks.Location = new System.Drawing.Point(604, 12);
+            this.btnBooks.Location = new System.Drawing.Point(590, 12);
             this.btnBooks.Name = "btnBooks";
             this.btnBooks.Size = new System.Drawing.Size(120, 42);
             this.btnBooks.TabIndex = 0;
@@ -201,7 +201,7 @@ namespace Login_2
             // 
             this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.ForeColor = System.Drawing.Color.White;
-            this.lblWelcome.Location = new System.Drawing.Point(798, 464);
+            this.lblWelcome.Location = new System.Drawing.Point(730, 508);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(309, 80);
             this.lblWelcome.TabIndex = 2;

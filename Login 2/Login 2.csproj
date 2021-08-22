@@ -55,6 +55,12 @@
     <Compile Include="Add Books.Designer.cs">
       <DependentUpon>Add Books.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Borrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Borrower.Designer.cs">
+      <DependentUpon>Add Borrower.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Issue Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue Book.Designer.cs">
+      <DependentUpon>Issue Book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.cs">
@@ -75,20 +87,38 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Return Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return Book.Designer.cs">
+      <DependentUpon>Return Book.cs</DependentUpon>
+    </Compile>
     <Compile Include="View Books.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View Books.Designer.cs">
       <DependentUpon>View Books.cs</DependentUpon>
     </Compile>
+    <Compile Include="View Borrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Borrower.Designer.cs">
+      <DependentUpon>View Borrower.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add Books.resx">
       <DependentUpon>Add Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Borrower.resx">
+      <DependentUpon>Add Borrower.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue Book.resx">
+      <DependentUpon>Issue Book.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,8 +132,14 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Return Book.resx">
+      <DependentUpon>Return Book.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View Books.resx">
       <DependentUpon>View Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Borrower.resx">
+      <DependentUpon>View Borrower.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

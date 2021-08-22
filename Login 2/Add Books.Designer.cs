@@ -60,7 +60,7 @@ namespace Login_2
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(291, 606);
+            this.panel1.Size = new System.Drawing.Size(291, 600);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -85,7 +85,7 @@ namespace Login_2
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.panel2.Location = new System.Drawing.Point(289, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(514, 603);
+            this.panel2.Size = new System.Drawing.Size(514, 600);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
