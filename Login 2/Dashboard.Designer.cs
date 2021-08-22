@@ -65,6 +65,7 @@ namespace Login_2
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(874, 353);
@@ -77,8 +78,9 @@ namespace Login_2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Location = new System.Drawing.Point(713, 255);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(304, 101);
@@ -115,6 +117,7 @@ namespace Login_2
             // btnBorrower
             // 
             this.btnBorrower.BackColor = System.Drawing.Color.Transparent;
+            this.btnBorrower.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBorrower.FlatAppearance.BorderSize = 0;
             this.btnBorrower.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnBorrower.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
@@ -132,6 +135,7 @@ namespace Login_2
             // btnCategories
             // 
             this.btnCategories.BackColor = System.Drawing.Color.Transparent;
+            this.btnCategories.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCategories.FlatAppearance.BorderSize = 0;
             this.btnCategories.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnCategories.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
@@ -142,13 +146,14 @@ namespace Login_2
             this.btnCategories.Name = "btnCategories";
             this.btnCategories.Size = new System.Drawing.Size(120, 42);
             this.btnCategories.TabIndex = 0;
-            this.btnCategories.Text = "CATEGARIES";
+            this.btnCategories.Text = "CATEGORIES";
             this.btnCategories.UseVisualStyleBackColor = false;
             this.btnCategories.Click += new System.EventHandler(this.btnCatogories_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
@@ -166,6 +171,7 @@ namespace Login_2
             // btnTransaction
             // 
             this.btnTransaction.BackColor = System.Drawing.Color.Transparent;
+            this.btnTransaction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTransaction.FlatAppearance.BorderSize = 0;
             this.btnTransaction.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnTransaction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
@@ -183,6 +189,7 @@ namespace Login_2
             // btnBooks
             // 
             this.btnBooks.BackColor = System.Drawing.Color.Transparent;
+            this.btnBooks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBooks.FlatAppearance.BorderSize = 0;
             this.btnBooks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnBooks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
