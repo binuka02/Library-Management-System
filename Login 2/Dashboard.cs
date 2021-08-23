@@ -25,7 +25,7 @@ namespace Login_2
 
         private void btnCatogories_Click(object sender, EventArgs e)
         {
-
+            new Categories().Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -40,7 +40,8 @@ namespace Login_2
 
         private void btnBooks_Click(object sender, EventArgs e)
         {
-
+            new Add_Books().Show();
+            this.Hide();
         }
 
         private void btnTransaction_Click(object sender, EventArgs e)
@@ -55,7 +56,7 @@ namespace Login_2
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

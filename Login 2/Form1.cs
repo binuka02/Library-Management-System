@@ -41,27 +41,10 @@ namespace Login_2
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\Binuka Silva\OneDrive\Documents\LibrarySystemDB.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlCommand cmd = new SqlCommand();
-            SqlDataAdapter da = new SqlDataAdapter();
-
-            string login = "SELECT * FROM UserDetails WHERE username='"+txtUsername.Text+"' and password='"+txtPassword.Text+"'";
-            cmd = new SqlCommand(login, con);
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            if(dr.Read()==true)
+            if(txtUsername.Text=="admin" && txtPassword.Text == "admin")
             {
                 new Dashboard().Show();
                 this.Hide();
-                //frvrevweqdcdsf
-            }
-
-            else 
-            {
-                MessageBox.Show("Invalid Username or Password, Please Try Again", "LOGIN FAILED!");
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-                txtUsername.Focus();
             }
 
         }
