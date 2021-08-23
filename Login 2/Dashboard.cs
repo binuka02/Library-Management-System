@@ -40,8 +40,14 @@ namespace Login_2
 
         private void btnBooks_Click(object sender, EventArgs e)
         {
-            new Add_Books().Show();
-            this.Hide();
+            if (panelStudent.Height == 104)
+            {
+                panelStudent.Height = 40;
+            }
+            else
+            {
+                panelStudent.Height = 104;
+            }
         }
 
         private void btnTransaction_Click(object sender, EventArgs e)
@@ -57,6 +63,16 @@ namespace Login_2
         private void btnUser_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
