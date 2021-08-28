@@ -96,7 +96,7 @@ namespace Login_2
 
         private void lblAlreadyHave_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new Login().Show();
             this.Hide();
         }
 

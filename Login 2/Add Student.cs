@@ -84,12 +84,19 @@ namespace Login_2
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-
+ 
+            txtStudentName.Text = "";
+            txtStudentID.Text = "";
+            txtContactNo.Text = "";
+            txtEmail.Text = "";
+            txtNIC.Text = "";
+            txtStudentName.Focus();
         }
 
         private void lblBack_Click(object sender, EventArgs e)
         {
-
+            new Dashboard().Show();
+            this.Hide();
         }
     }
 }

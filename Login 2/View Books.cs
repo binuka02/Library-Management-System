@@ -19,7 +19,8 @@ namespace Login_2
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-
+            new Dashboard().Show();
+            this.Hide();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -140,6 +141,12 @@ namespace Login_2
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void buttonClear_Click_1(object sender, EventArgs e)
+        {
+            txtBookID.Text = "";
+            txtBookID.Focus();
         }
     }
 }

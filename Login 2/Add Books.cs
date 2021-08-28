@@ -119,12 +119,25 @@ namespace Login_2
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-
+            txtBookName.Text = "";
+            txtAuthor.Text = "";
+            txtPublication.Text = "";
+            txtDate.Text = "";
+            txtBookID.Text = "";
+            txtBookQuantity.Text = "";
+            txtCategory.Text = "";
+            txtBookName.Focus();
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            new Dashboard().Show();
+            this.Hide();
         }
     }
 }

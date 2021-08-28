@@ -42,7 +42,7 @@ namespace Login_2
             this.txtBookCode = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPublication = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtAuthor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@ namespace Login_2
             this.buttonSearch = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBook = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@ namespace Login_2
             this.panel2.Controls.Add(this.txtBookCode);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtPublication);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtAuthor);
             this.panel2.Controls.Add(this.label4);
@@ -135,6 +135,7 @@ namespace Login_2
             this.buttonClear.TabIndex = 5;
             this.buttonClear.Text = "CLEAR";
             this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonDelete
             // 
@@ -242,16 +243,16 @@ namespace Login_2
             this.label6.TabIndex = 2;
             this.label6.Text = "Purchase Date";
             // 
-            // textBox2
+            // txtPublication
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(50, 211);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(369, 25);
-            this.textBox2.TabIndex = 3;
+            this.txtPublication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtPublication.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPublication.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPublication.Location = new System.Drawing.Point(50, 211);
+            this.txtPublication.Multiline = true;
+            this.txtPublication.Name = "txtPublication";
+            this.txtPublication.Size = new System.Drawing.Size(369, 25);
+            this.txtPublication.TabIndex = 3;
             // 
             // label5
             // 
@@ -350,16 +351,16 @@ namespace Login_2
             this.label1.TabIndex = 0;
             this.label1.Text = "Update";
             // 
-            // textBox1
+            // txtBook
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(51, 426);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 27);
-            this.textBox1.TabIndex = 3;
+            this.txtBook.BackColor = System.Drawing.Color.White;
+            this.txtBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBook.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBook.Location = new System.Drawing.Point(51, 426);
+            this.txtBook.Multiline = true;
+            this.txtBook.Name = "txtBook";
+            this.txtBook.Size = new System.Drawing.Size(224, 27);
+            this.txtBook.TabIndex = 3;
             // 
             // label9
             // 
@@ -381,7 +382,7 @@ namespace Login_2
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtBook);
             this.panel1.Controls.Add(this.label9);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(-2, -10);
@@ -449,7 +450,7 @@ namespace Login_2
         private System.Windows.Forms.TextBox txtBookCode;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPublication;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtAuthor;
         private System.Windows.Forms.Label label4;
@@ -458,7 +459,7 @@ namespace Login_2
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBook;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;

@@ -16,5 +16,28 @@ namespace Login_2
         {
             InitializeComponent();
         }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            new Dashboard().Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            txtBookName.Text = "";
+            txtAuthor.Text = "";
+            txtPublication.Text = "";
+            txtStudentName.Text = "";
+            txtStudentID.Text = "";
+            txtReturnDate.Text = "";
+            txtCategory.Text = "";
+            txtBookName.Focus();
+        }
     }
 }

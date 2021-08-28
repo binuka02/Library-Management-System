@@ -34,13 +34,13 @@ namespace Login_2
             this.buttonAdd = new System.Windows.Forms.Button();
             this.txtNIC = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtBookCode = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblBorrowerEmail = new System.Windows.Forms.Label();
-            this.textContactNo = new System.Windows.Forms.TextBox();
+            this.txtContactNo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtBorrowerID = new System.Windows.Forms.TextBox();
+            this.txtStudentID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtBorrowerName = new System.Windows.Forms.TextBox();
+            this.txtStudentName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -117,17 +117,17 @@ namespace Login_2
             this.label8.Text = "NIC";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // txtBookCode
+            // txtEmail
             // 
-            this.txtBookCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtBookCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBookCode.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookCode.Location = new System.Drawing.Point(341, 264);
-            this.txtBookCode.Multiline = true;
-            this.txtBookCode.Name = "txtBookCode";
-            this.txtBookCode.Size = new System.Drawing.Size(369, 25);
-            this.txtBookCode.TabIndex = 16;
-            this.txtBookCode.TextChanged += new System.EventHandler(this.txtBookCode_TextChanged);
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(341, 264);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(369, 25);
+            this.txtEmail.TabIndex = 16;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtBookCode_TextChanged);
             // 
             // lblBorrowerEmail
             // 
@@ -142,17 +142,17 @@ namespace Login_2
             this.lblBorrowerEmail.Text = "Email";
             this.lblBorrowerEmail.Click += new System.EventHandler(this.lblBorrowerEmail_Click);
             // 
-            // textContactNo
+            // txtContactNo
             // 
-            this.textContactNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textContactNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textContactNo.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textContactNo.Location = new System.Drawing.Point(341, 204);
-            this.textContactNo.Multiline = true;
-            this.textContactNo.Name = "textContactNo";
-            this.textContactNo.Size = new System.Drawing.Size(369, 25);
-            this.textContactNo.TabIndex = 17;
-            this.textContactNo.TextChanged += new System.EventHandler(this.textContactNo_TextChanged);
+            this.txtContactNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtContactNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtContactNo.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContactNo.Location = new System.Drawing.Point(341, 204);
+            this.txtContactNo.Multiline = true;
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(369, 25);
+            this.txtContactNo.TabIndex = 17;
+            this.txtContactNo.TextChanged += new System.EventHandler(this.textContactNo_TextChanged);
             // 
             // label5
             // 
@@ -167,17 +167,17 @@ namespace Login_2
             this.label5.Text = "Contact No";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txtBorrowerID
+            // txtStudentID
             // 
-            this.txtBorrowerID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtBorrowerID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBorrowerID.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBorrowerID.Location = new System.Drawing.Point(341, 147);
-            this.txtBorrowerID.Multiline = true;
-            this.txtBorrowerID.Name = "txtBorrowerID";
-            this.txtBorrowerID.Size = new System.Drawing.Size(369, 25);
-            this.txtBorrowerID.TabIndex = 18;
-            this.txtBorrowerID.TextChanged += new System.EventHandler(this.txtBorrowerID_TextChanged);
+            this.txtStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStudentID.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentID.Location = new System.Drawing.Point(341, 147);
+            this.txtStudentID.Multiline = true;
+            this.txtStudentID.Name = "txtStudentID";
+            this.txtStudentID.Size = new System.Drawing.Size(369, 25);
+            this.txtStudentID.TabIndex = 18;
+            this.txtStudentID.TextChanged += new System.EventHandler(this.txtBorrowerID_TextChanged);
             // 
             // label4
             // 
@@ -187,22 +187,22 @@ namespace Login_2
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label4.Location = new System.Drawing.Point(338, 128);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 16);
+            this.label4.Size = new System.Drawing.Size(85, 16);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Borrower ID";
+            this.label4.Text = "Student ID";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // txtBorrowerName
+            // txtStudentName
             // 
-            this.txtBorrowerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtBorrowerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBorrowerName.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBorrowerName.Location = new System.Drawing.Point(341, 87);
-            this.txtBorrowerName.Multiline = true;
-            this.txtBorrowerName.Name = "txtBorrowerName";
-            this.txtBorrowerName.Size = new System.Drawing.Size(369, 25);
-            this.txtBorrowerName.TabIndex = 19;
-            this.txtBorrowerName.TextChanged += new System.EventHandler(this.txtBorrowerName_TextChanged);
+            this.txtStudentName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtStudentName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStudentName.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentName.Location = new System.Drawing.Point(341, 87);
+            this.txtStudentName.Multiline = true;
+            this.txtStudentName.Name = "txtStudentName";
+            this.txtStudentName.Size = new System.Drawing.Size(369, 25);
+            this.txtStudentName.TabIndex = 19;
+            this.txtStudentName.TextChanged += new System.EventHandler(this.txtBorrowerName_TextChanged);
             // 
             // label3
             // 
@@ -212,9 +212,9 @@ namespace Login_2
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label3.Location = new System.Drawing.Point(338, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 16);
+            this.label3.Size = new System.Drawing.Size(108, 16);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Borrower Name";
+            this.label3.Text = "Student Name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel1
@@ -235,11 +235,11 @@ namespace Login_2
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label2.Location = new System.Drawing.Point(35, 309);
+            this.label2.Location = new System.Drawing.Point(54, 306);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 39);
+            this.label2.Size = new System.Drawing.Size(187, 38);
             this.label2.TabIndex = 0;
-            this.label2.Text = "BORROWER";
+            this.label2.Text = "STUDENT";
             // 
             // label1
             // 
@@ -265,13 +265,13 @@ namespace Login_2
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.txtNIC);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtBookCode);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblBorrowerEmail);
-            this.Controls.Add(this.textContactNo);
+            this.Controls.Add(this.txtContactNo);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtBorrowerID);
+            this.Controls.Add(this.txtStudentID);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtBorrowerName);
+            this.Controls.Add(this.txtStudentName);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Add_Borrower";
@@ -292,13 +292,13 @@ namespace Login_2
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.TextBox txtNIC;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtBookCode;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblBorrowerEmail;
-        private System.Windows.Forms.TextBox textContactNo;
+        private System.Windows.Forms.TextBox txtContactNo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtBorrowerID;
+        private System.Windows.Forms.TextBox txtStudentID;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtBorrowerName;
+        private System.Windows.Forms.TextBox txtStudentName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;

@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace Login_2
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -41,11 +41,10 @@ namespace Login_2
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if(txtUsername.Text=="admin" && txtPassword.Text == "admin")
-            {
+            
                 new Dashboard().Show();
                 this.Hide();
-            }
+            
 
         }
 

@@ -24,7 +24,20 @@ namespace Login_2
 
         private void lblBack_Click(object sender, EventArgs e)
         {
+            new Dashboard().Show();
+            this.Hide();
+        }
 
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            txtBookName.Text = "";
+            txtAuthor.Text = "";
+            txtPublication.Text = "";
+            txtStudentName.Text = "";
+            txtStudentID.Text = "";
+            txtIssueDate.Text = "";
+            txtCategory.Text = "";
+            txtBookName.Focus();
         }
     }
 }

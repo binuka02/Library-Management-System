@@ -30,16 +30,18 @@ namespace Login_2
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtCategory = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.lblBack = new System.Windows.Forms.Label();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.txtIssueDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.txtBookQuantity = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtBorrowerName = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtStudentID = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtStudentName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtPublication = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtAuthor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@ namespace Login_2
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSearch = new System.Windows.Forms.Button();
-            this.txtCategory = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,11 +67,11 @@ namespace Login_2
             this.panel2.Controls.Add(this.buttonUpdate);
             this.panel2.Controls.Add(this.txtIssueDate);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.txtBookQuantity);
+            this.panel2.Controls.Add(this.txtStudentID);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.txtBorrowerName);
+            this.panel2.Controls.Add(this.txtStudentName);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtPublication);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtAuthor);
             this.panel2.Controls.Add(this.label4);
@@ -82,6 +82,29 @@ namespace Login_2
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(494, 700);
             this.panel2.TabIndex = 4;
+            // 
+            // txtCategory
+            // 
+            this.txtCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCategory.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategory.Location = new System.Drawing.Point(50, 482);
+            this.txtCategory.Multiline = true;
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(369, 25);
+            this.txtCategory.TabIndex = 9;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label10.Location = new System.Drawing.Point(47, 463);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 16);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Category";
             // 
             // lblBack
             // 
@@ -109,6 +132,7 @@ namespace Login_2
             this.buttonClear.TabIndex = 5;
             this.buttonClear.Text = "CLEAR";
             this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonUpdate
             // 
@@ -143,16 +167,28 @@ namespace Login_2
             this.txtIssueDate.TabIndex = 4;
             this.txtIssueDate.Value = new System.DateTime(2021, 8, 21, 16, 27, 35, 618);
             // 
-            // txtBookQuantity
+            // label6
             // 
-            this.txtBookQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtBookQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBookQuantity.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookQuantity.Location = new System.Drawing.Point(50, 354);
-            this.txtBookQuantity.Multiline = true;
-            this.txtBookQuantity.Name = "txtBookQuantity";
-            this.txtBookQuantity.Size = new System.Drawing.Size(369, 25);
-            this.txtBookQuantity.TabIndex = 3;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label6.Location = new System.Drawing.Point(50, 397);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 16);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Issue Date";
+            // 
+            // txtStudentID
+            // 
+            this.txtStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStudentID.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentID.Location = new System.Drawing.Point(50, 354);
+            this.txtStudentID.Multiline = true;
+            this.txtStudentID.Name = "txtStudentID";
+            this.txtStudentID.Size = new System.Drawing.Size(369, 25);
+            this.txtStudentID.TabIndex = 3;
             // 
             // label8
             // 
@@ -162,20 +198,20 @@ namespace Login_2
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label8.Location = new System.Drawing.Point(47, 335);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 16);
+            this.label8.Size = new System.Drawing.Size(85, 16);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Borrower ID";
+            this.label8.Text = "Student ID";
             // 
-            // txtBorrowerName
+            // txtStudentName
             // 
-            this.txtBorrowerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtBorrowerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBorrowerName.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBorrowerName.Location = new System.Drawing.Point(50, 296);
-            this.txtBorrowerName.Multiline = true;
-            this.txtBorrowerName.Name = "txtBorrowerName";
-            this.txtBorrowerName.Size = new System.Drawing.Size(369, 25);
-            this.txtBorrowerName.TabIndex = 3;
+            this.txtStudentName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtStudentName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStudentName.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudentName.Location = new System.Drawing.Point(50, 296);
+            this.txtStudentName.Multiline = true;
+            this.txtStudentName.Name = "txtStudentName";
+            this.txtStudentName.Size = new System.Drawing.Size(369, 25);
+            this.txtStudentName.TabIndex = 3;
             // 
             // label7
             // 
@@ -185,32 +221,20 @@ namespace Login_2
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label7.Location = new System.Drawing.Point(47, 277);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 16);
+            this.label7.Size = new System.Drawing.Size(108, 16);
             this.label7.TabIndex = 2;
-            this.label7.Text = "Borrower Name";
+            this.label7.Text = "Student Name";
             // 
-            // label6
+            // txtPublication
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label6.Location = new System.Drawing.Point(50, 397);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 16);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Purchase Date";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(50, 244);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(369, 25);
-            this.textBox2.TabIndex = 3;
+            this.txtPublication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtPublication.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPublication.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPublication.Location = new System.Drawing.Point(50, 244);
+            this.txtPublication.Multiline = true;
+            this.txtPublication.Name = "txtPublication";
+            this.txtPublication.Size = new System.Drawing.Size(369, 25);
+            this.txtPublication.TabIndex = 3;
             // 
             // label5
             // 
@@ -346,29 +370,6 @@ namespace Login_2
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = false;
             // 
-            // txtCategory
-            // 
-            this.txtCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCategory.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategory.Location = new System.Drawing.Point(50, 482);
-            this.txtCategory.Multiline = true;
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(369, 25);
-            this.txtCategory.TabIndex = 9;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label10.Location = new System.Drawing.Point(47, 463);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 16);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Category";
-            // 
             // Issue_Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -396,12 +397,12 @@ namespace Login_2
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonUpdate;
         private Guna.UI2.WinForms.Guna2DateTimePicker txtIssueDate;
-        private System.Windows.Forms.TextBox txtBookQuantity;
+        private System.Windows.Forms.TextBox txtStudentID;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtBorrowerName;
+        private System.Windows.Forms.TextBox txtStudentName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPublication;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtAuthor;
         private System.Windows.Forms.Label label4;

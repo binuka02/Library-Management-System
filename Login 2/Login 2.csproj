@@ -98,11 +98,11 @@
     <Compile Include="Add Books.Designer.cs">
       <DependentUpon>Add Books.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add Borrower.cs">
+    <Compile Include="Add Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add Borrower.Designer.cs">
-      <DependentUpon>Add Borrower.cs</DependentUpon>
+    <Compile Include="Add Student.Designer.cs">
+      <DependentUpon>Add Student.cs</DependentUpon>
     </Compile>
     <Compile Include="Categories.cs">
       <SubType>Form</SubType>
@@ -116,11 +116,11 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Issue Book.cs">
       <SubType>Form</SubType>
@@ -154,17 +154,17 @@
     <Compile Include="View Books.Designer.cs">
       <DependentUpon>View Books.cs</DependentUpon>
     </Compile>
-    <Compile Include="View Borrower.cs">
+    <Compile Include="View Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View Borrower.Designer.cs">
-      <DependentUpon>View Borrower.cs</DependentUpon>
+    <Compile Include="View Student.Designer.cs">
+      <DependentUpon>View Student.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Add Books.resx">
       <DependentUpon>Add Books.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add Borrower.resx">
-      <DependentUpon>Add Borrower.cs</DependentUpon>
+    <EmbeddedResource Include="Add Student.resx">
+      <DependentUpon>Add Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Categories.resx">
       <DependentUpon>Categories.cs</DependentUpon>
@@ -172,8 +172,8 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Issue Book.resx">
       <DependentUpon>Issue Book.cs</DependentUpon>
@@ -199,8 +199,8 @@
     <EmbeddedResource Include="View Books.resx">
       <DependentUpon>View Books.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View Borrower.resx">
-      <DependentUpon>View Borrower.cs</DependentUpon>
+    <EmbeddedResource Include="View Student.resx">
+      <DependentUpon>View Student.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -21,5 +21,18 @@ namespace Login_2
         {
 
         }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            txtBook.Text = "";
+            txtBookName.Text = "";
+            txtAuthor.Text = "";
+            txtPublication.Text = "";
+            txtDate.Text = "";
+            txtBookCode.Text = "";
+            txtBookQuantity.Text = "";
+            txtCategory.Text = "";
+            txtBook.Focus();
+        }
     }
 }

@@ -81,5 +81,11 @@ namespace Login_2
         {
 
         }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            new Dashboard().Show();
+            this.Hide();
+        }
     }
 }

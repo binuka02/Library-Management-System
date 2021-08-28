@@ -29,6 +29,7 @@ namespace Login_2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblWelcome = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -37,23 +38,26 @@ namespace Login_2
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelBooks = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnReturnBooks = new System.Windows.Forms.Button();
+            this.btnIssueBooks = new System.Windows.Forms.Button();
+            this.btnViewandUpdate = new System.Windows.Forms.Button();
+            this.btnViewBooks = new System.Windows.Forms.Button();
+            this.btnAddBooks = new System.Windows.Forms.Button();
             this.btnBooks = new System.Windows.Forms.Button();
+            this.panelStudents = new System.Windows.Forms.Panel();
+            this.btnViewStudents = new System.Windows.Forms.Button();
+            this.btnAddStudents = new System.Windows.Forms.Button();
+            this.btnStudent = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnTransaction = new System.Windows.Forms.Button();
-            this.panelStudent = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.labelTime = new System.Windows.Forms.Label();
+            this.labelDate = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelBooks.SuspendLayout();
-            this.panelStudent.SuspendLayout();
+            this.panelStudents.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -127,11 +131,14 @@ namespace Login_2
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.panelStudent);
+            this.panel2.Controls.Add(this.labelDate);
+            this.panel2.Controls.Add(this.labelTime);
             this.panel2.Controls.Add(this.panelBooks);
+            this.panel2.Controls.Add(this.panelStudents);
             this.panel2.Controls.Add(this.btnCategories);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.btnTransaction);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -142,113 +149,112 @@ namespace Login_2
             // 
             // panelBooks
             // 
-            this.panelBooks.BackColor = System.Drawing.Color.Transparent;
-            this.panelBooks.Controls.Add(this.button5);
-            this.panelBooks.Controls.Add(this.button2);
-            this.panelBooks.Controls.Add(this.button6);
-            this.panelBooks.Controls.Add(this.button3);
-            this.panelBooks.Controls.Add(this.button1);
+            this.panelBooks.Controls.Add(this.btnReturnBooks);
+            this.panelBooks.Controls.Add(this.btnIssueBooks);
+            this.panelBooks.Controls.Add(this.btnViewandUpdate);
+            this.panelBooks.Controls.Add(this.btnViewBooks);
+            this.panelBooks.Controls.Add(this.btnAddBooks);
             this.panelBooks.Controls.Add(this.btnBooks);
-            this.panelBooks.Location = new System.Drawing.Point(571, 12);
+            this.panelBooks.Location = new System.Drawing.Point(598, 12);
             this.panelBooks.Name = "panelBooks";
-            this.panelBooks.Size = new System.Drawing.Size(152, 40);
-            this.panelBooks.TabIndex = 3;
-            this.panelBooks.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panelBooks.Size = new System.Drawing.Size(126, 40);
+            this.panelBooks.TabIndex = 7;
             // 
-            // button5
+            // btnReturnBooks
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Britannic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 140);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 28);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "RETURN BOOKS";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.btnBooks_Click);
+            this.btnReturnBooks.BackColor = System.Drawing.Color.Transparent;
+            this.btnReturnBooks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReturnBooks.FlatAppearance.BorderSize = 0;
+            this.btnReturnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReturnBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnBooks.ForeColor = System.Drawing.Color.White;
+            this.btnReturnBooks.Location = new System.Drawing.Point(0, 147);
+            this.btnReturnBooks.Name = "btnReturnBooks";
+            this.btnReturnBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnReturnBooks.Size = new System.Drawing.Size(126, 28);
+            this.btnReturnBooks.TabIndex = 0;
+            this.btnReturnBooks.Text = "RETURN BOOKS";
+            this.btnReturnBooks.UseVisualStyleBackColor = false;
+            this.btnReturnBooks.Click += new System.EventHandler(this.button6_Click);
+            this.btnReturnBooks.MouseLeave += new System.EventHandler(this.btnReturnBooks_MouseLeave);
+            this.btnReturnBooks.MouseHover += new System.EventHandler(this.btnReturnBooks_MouseHover);
             // 
-            // button2
+            // btnIssueBooks
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Britannic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(-3, 76);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 28);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "VIEW BOOKS";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.btnBooks_Click);
+            this.btnIssueBooks.BackColor = System.Drawing.Color.Transparent;
+            this.btnIssueBooks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIssueBooks.FlatAppearance.BorderSize = 0;
+            this.btnIssueBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIssueBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIssueBooks.ForeColor = System.Drawing.Color.White;
+            this.btnIssueBooks.Location = new System.Drawing.Point(0, 114);
+            this.btnIssueBooks.Name = "btnIssueBooks";
+            this.btnIssueBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnIssueBooks.Size = new System.Drawing.Size(126, 28);
+            this.btnIssueBooks.TabIndex = 0;
+            this.btnIssueBooks.Text = "ISSUE BOOKS";
+            this.btnIssueBooks.UseVisualStyleBackColor = false;
+            this.btnIssueBooks.Click += new System.EventHandler(this.button5_Click);
+            this.btnIssueBooks.MouseLeave += new System.EventHandler(this.btnIssueBooks_MouseLeave);
+            this.btnIssueBooks.MouseHover += new System.EventHandler(this.btnIssueBooks_MouseHover);
             // 
-            // button6
+            // btnViewandUpdate
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Britannic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 172);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(160, 28);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "VIEW and UPDATE";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.btnBooks_Click);
+            this.btnViewandUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnViewandUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewandUpdate.FlatAppearance.BorderSize = 0;
+            this.btnViewandUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewandUpdate.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewandUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnViewandUpdate.Location = new System.Drawing.Point(0, 181);
+            this.btnViewandUpdate.Name = "btnViewandUpdate";
+            this.btnViewandUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnViewandUpdate.Size = new System.Drawing.Size(126, 28);
+            this.btnViewandUpdate.TabIndex = 0;
+            this.btnViewandUpdate.Text = "VIEW and UPDATE";
+            this.btnViewandUpdate.UseVisualStyleBackColor = false;
+            this.btnViewandUpdate.Click += new System.EventHandler(this.button8_Click);
+            this.btnViewandUpdate.MouseLeave += new System.EventHandler(this.btnViewandUpdate_MouseLeave);
+            this.btnViewandUpdate.MouseHover += new System.EventHandler(this.btnViewandUpdate_MouseHover);
             // 
-            // button3
+            // btnViewBooks
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Britannic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 108);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 28);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "ISSUE BOOKS";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.btnBooks_Click);
+            this.btnViewBooks.BackColor = System.Drawing.Color.Transparent;
+            this.btnViewBooks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewBooks.FlatAppearance.BorderSize = 0;
+            this.btnViewBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewBooks.ForeColor = System.Drawing.Color.White;
+            this.btnViewBooks.Location = new System.Drawing.Point(0, 79);
+            this.btnViewBooks.Name = "btnViewBooks";
+            this.btnViewBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnViewBooks.Size = new System.Drawing.Size(126, 28);
+            this.btnViewBooks.TabIndex = 0;
+            this.btnViewBooks.Text = "VIEW BOOKS";
+            this.btnViewBooks.UseVisualStyleBackColor = false;
+            this.btnViewBooks.Click += new System.EventHandler(this.button3_Click);
+            this.btnViewBooks.MouseLeave += new System.EventHandler(this.btnViewBooks_MouseLeave);
+            this.btnViewBooks.MouseHover += new System.EventHandler(this.btnViewBooks_MouseHover);
             // 
-            // button1
+            // btnAddBooks
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Britannic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 44);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ADD BOOKS";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnBooks_Click);
+            this.btnAddBooks.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddBooks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddBooks.FlatAppearance.BorderSize = 0;
+            this.btnAddBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBooks.ForeColor = System.Drawing.Color.White;
+            this.btnAddBooks.Location = new System.Drawing.Point(0, 46);
+            this.btnAddBooks.Name = "btnAddBooks";
+            this.btnAddBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnAddBooks.Size = new System.Drawing.Size(126, 28);
+            this.btnAddBooks.TabIndex = 0;
+            this.btnAddBooks.Text = "ADD BOOKS";
+            this.btnAddBooks.UseVisualStyleBackColor = false;
+            this.btnAddBooks.ClientSizeChanged += new System.EventHandler(this.btnAddBooks_ClientSizeChanged);
+            this.btnAddBooks.Click += new System.EventHandler(this.button2_Click);
+            this.btnAddBooks.MouseLeave += new System.EventHandler(this.btnAddBooks_MouseLeave);
+            this.btnAddBooks.MouseHover += new System.EventHandler(this.btnAddBooks_MouseHover);
             // 
             // btnBooks
             // 
@@ -256,19 +262,86 @@ namespace Login_2
             this.btnBooks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBooks.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBooks.FlatAppearance.BorderSize = 0;
-            this.btnBooks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnBooks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBooks.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooks.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
             this.btnBooks.ForeColor = System.Drawing.Color.White;
             this.btnBooks.Location = new System.Drawing.Point(0, 0);
-            this.btnBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBooks.Name = "btnBooks";
-            this.btnBooks.Size = new System.Drawing.Size(152, 40);
+            this.btnBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnBooks.Size = new System.Drawing.Size(126, 40);
             this.btnBooks.TabIndex = 0;
             this.btnBooks.Text = "BOOKS";
             this.btnBooks.UseVisualStyleBackColor = false;
-            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
+            this.btnBooks.Click += new System.EventHandler(this.button1_Click);
+            this.btnBooks.MouseLeave += new System.EventHandler(this.btnBooks_MouseLeave);
+            this.btnBooks.MouseHover += new System.EventHandler(this.btnBooks_MouseHover);
+            // 
+            // panelStudents
+            // 
+            this.panelStudents.BackColor = System.Drawing.Color.Transparent;
+            this.panelStudents.Controls.Add(this.btnViewStudents);
+            this.panelStudents.Controls.Add(this.btnAddStudents);
+            this.panelStudents.Controls.Add(this.btnStudent);
+            this.panelStudents.ForeColor = System.Drawing.Color.White;
+            this.panelStudents.Location = new System.Drawing.Point(730, 12);
+            this.panelStudents.Name = "panelStudents";
+            this.panelStudents.Size = new System.Drawing.Size(120, 40);
+            this.panelStudents.TabIndex = 6;
+            // 
+            // btnViewStudents
+            // 
+            this.btnViewStudents.BackColor = System.Drawing.Color.Transparent;
+            this.btnViewStudents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewStudents.FlatAppearance.BorderSize = 0;
+            this.btnViewStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewStudents.ForeColor = System.Drawing.Color.White;
+            this.btnViewStudents.Location = new System.Drawing.Point(-1, 82);
+            this.btnViewStudents.Name = "btnViewStudents";
+            this.btnViewStudents.Size = new System.Drawing.Size(129, 28);
+            this.btnViewStudents.TabIndex = 0;
+            this.btnViewStudents.Text = "VIEW STUDENTS";
+            this.btnViewStudents.UseVisualStyleBackColor = false;
+            this.btnViewStudents.Click += new System.EventHandler(this.button9_Click);
+            this.btnViewStudents.MouseLeave += new System.EventHandler(this.btnViewStudents_MouseLeave);
+            this.btnViewStudents.MouseHover += new System.EventHandler(this.btnViewStudents_MouseHover);
+            // 
+            // btnAddStudents
+            // 
+            this.btnAddStudents.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddStudents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddStudents.FlatAppearance.BorderSize = 0;
+            this.btnAddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStudents.ForeColor = System.Drawing.Color.White;
+            this.btnAddStudents.Location = new System.Drawing.Point(-1, 46);
+            this.btnAddStudents.Name = "btnAddStudents";
+            this.btnAddStudents.Size = new System.Drawing.Size(129, 28);
+            this.btnAddStudents.TabIndex = 0;
+            this.btnAddStudents.Text = "ADD STUDENTS";
+            this.btnAddStudents.UseVisualStyleBackColor = false;
+            this.btnAddStudents.Click += new System.EventHandler(this.button7_Click);
+            this.btnAddStudents.MouseLeave += new System.EventHandler(this.btnAddStudents_MouseLeave);
+            this.btnAddStudents.MouseHover += new System.EventHandler(this.btnAddStudents_MouseHover);
+            // 
+            // btnStudent
+            // 
+            this.btnStudent.BackColor = System.Drawing.Color.Transparent;
+            this.btnStudent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStudent.FlatAppearance.BorderSize = 0;
+            this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStudent.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
+            this.btnStudent.ForeColor = System.Drawing.Color.White;
+            this.btnStudent.Location = new System.Drawing.Point(0, 0);
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Size = new System.Drawing.Size(120, 40);
+            this.btnStudent.TabIndex = 0;
+            this.btnStudent.Text = "STUDENTS";
+            this.btnStudent.UseVisualStyleBackColor = false;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
+            this.btnStudent.MouseLeave += new System.EventHandler(this.btnStudent_MouseLeave);
+            this.btnStudent.MouseHover += new System.EventHandler(this.btnStudent_MouseHover);
             // 
             // btnCategories
             // 
@@ -288,6 +361,8 @@ namespace Login_2
             this.btnCategories.Text = "CATEGORIES";
             this.btnCategories.UseVisualStyleBackColor = false;
             this.btnCategories.Click += new System.EventHandler(this.btnCatogories_Click);
+            this.btnCategories.MouseLeave += new System.EventHandler(this.btnCategories_MouseLeave);
+            this.btnCategories.MouseHover += new System.EventHandler(this.btnCategories_MouseHover);
             // 
             // button4
             // 
@@ -307,6 +382,8 @@ namespace Login_2
             this.button4.Text = "INVENTORY REPORTS";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // btnTransaction
             // 
@@ -326,74 +403,35 @@ namespace Login_2
             this.btnTransaction.Text = "TRANSACTION";
             this.btnTransaction.UseVisualStyleBackColor = false;
             this.btnTransaction.Click += new System.EventHandler(this.btnTransaction_Click);
+            this.btnTransaction.MouseLeave += new System.EventHandler(this.btnTransaction_MouseLeave);
+            this.btnTransaction.MouseHover += new System.EventHandler(this.btnTransaction_MouseHover);
             // 
-            // panelStudent
+            // labelTime
             // 
-            this.panelStudent.Controls.Add(this.button12);
-            this.panelStudent.Controls.Add(this.button11);
-            this.panelStudent.Controls.Add(this.button8);
-            this.panelStudent.Location = new System.Drawing.Point(703, 12);
-            this.panelStudent.Name = "panelStudent";
-            this.panelStudent.Size = new System.Drawing.Size(154, 40);
-            this.panelStudent.TabIndex = 4;
+            this.labelTime.AutoSize = true;
+            this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTime.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.labelTime.Location = new System.Drawing.Point(3, 9);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(43, 22);
+            this.labelTime.TabIndex = 8;
+            this.labelTime.Text = "Time";
             // 
-            // button8
+            // labelDate
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(0, 0);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(154, 40);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "STUDENTS";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.btnBooks_Click);
+            this.labelDate.AutoSize = true;
+            this.labelDate.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDate.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.labelDate.Location = new System.Drawing.Point(3, 30);
+            this.labelDate.Name = "labelDate";
+            this.labelDate.Size = new System.Drawing.Size(41, 22);
+            this.labelDate.TabIndex = 8;
+            this.labelDate.Text = "Date";
             // 
-            // button11
+            // timer1
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Britannic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(0, 44);
-            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(154, 28);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "ADD STUDENTS";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.btnBooks_Click);
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.Transparent;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Britannic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(0, 76);
-            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(154, 28);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "VIEW STUDENTS";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.btnBooks_Click);
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Dashboard
             // 
@@ -409,8 +447,9 @@ namespace Login_2
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panelBooks.ResumeLayout(false);
-            this.panelStudent.ResumeLayout(false);
+            this.panelStudents.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -419,7 +458,6 @@ namespace Login_2
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnBooks;
         private System.Windows.Forms.Button btnCategories;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnTransaction;
@@ -427,15 +465,19 @@ namespace Login_2
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblWelcome;
+        private System.Windows.Forms.Panel panelStudents;
+        private System.Windows.Forms.Button btnViewStudents;
+        private System.Windows.Forms.Button btnAddStudents;
+        private System.Windows.Forms.Button btnStudent;
         private System.Windows.Forms.Panel panelBooks;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panelStudent;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnReturnBooks;
+        private System.Windows.Forms.Button btnIssueBooks;
+        private System.Windows.Forms.Button btnViewandUpdate;
+        private System.Windows.Forms.Button btnViewBooks;
+        private System.Windows.Forms.Button btnAddBooks;
+        private System.Windows.Forms.Button btnBooks;
+        private System.Windows.Forms.Label labelDate;
+        private System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.Timer timer1;
     }
 }
