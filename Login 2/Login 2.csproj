@@ -154,6 +154,12 @@
     <Compile Include="Return Book.Designer.cs">
       <DependentUpon>Return Book.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBook.Designer.cs">
+      <DependentUpon>SearchBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update and Delete Book.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Return Book.resx">
       <DependentUpon>Return Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBook.resx">
+      <DependentUpon>SearchBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update and Delete Book.resx">
       <DependentUpon>Update and Delete Book.cs</DependentUpon>

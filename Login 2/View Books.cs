@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Login_2
 {
@@ -15,6 +16,8 @@ namespace Login_2
         public View_Books()
         {
             InitializeComponent();
+            
+
         }
 
         private void lblExit_Click(object sender, EventArgs e)
@@ -30,7 +33,19 @@ namespace Login_2
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            searchData(txtBookName.Text);
+        }
 
+        public void searchData(string search)
+        {
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string query = "SELECT * FROM book WHERE BookName LIKE '%"+search+"%'";
+            MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+
+            DataTable set = new DataTable();
+            adapter.Fill(set);
+            dataGridBook.DataSource = set;
+            con.Close();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -145,8 +160,24 @@ namespace Login_2
 
         private void buttonClear_Click_1(object sender, EventArgs e)
         {
-            txtBookID.Text = "";
-            txtBookID.Focus();
+            txtBookName.Text = "";
+            txtBookName.Focus();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void View_Books_Load(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string query = "SELECT * FROM book";
+            MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+
+            DataTable set = new DataTable();
+            adapter.Fill(set);
+            dataGridBook.DataSource = set;
         }
     }
 }

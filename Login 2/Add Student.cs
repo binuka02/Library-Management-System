@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Login_2
 {
@@ -79,7 +80,25 @@ namespace Login_2
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string query = "INSERT INTO student VALUES(" + txtStudentID.Text + ",'" + txtStudentName.Text + "'," + txtContactNo.Text + ",'" + txtEmail.Text + "','" + txtNIC.Text + "');";
+            MySqlCommand cmd = new MySqlCommand(query, con);
 
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Query Added Successful");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
