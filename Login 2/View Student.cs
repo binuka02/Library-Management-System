@@ -17,11 +17,12 @@ namespace Login_2
         {
             InitializeComponent();
         }
+        MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+        string query;
 
         private void View_Borrower_Load(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            string query = "SELECT * FROM student";
+            query = "SELECT * FROM student";
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
 
             DataTable set = new DataTable();
@@ -48,9 +49,9 @@ namespace Login_2
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            txtStudentID.Text = "";
-            txtStudentName.Text = "";
-            txtStudentID.Focus();
+            UpdateStudent updateStudent = new UpdateStudent(int.Parse(txtSelectedStudentID.Text));
+            updateStudent.Show();
+            this.Hide();
         }
 
         private void txtStudentID_TextChanged(object sender, EventArgs e)
@@ -60,8 +61,7 @@ namespace Login_2
 
         public void searchData(string search,string columnName)
         {
-            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            string query = "SELECT * FROM student WHERE "+columnName+" LIKE '%" + search + "%'";
+            query = "SELECT * FROM student WHERE "+columnName+" LIKE '%" + search + "%'";
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
 
             DataTable set = new DataTable();
@@ -73,6 +73,19 @@ namespace Login_2
         private void txtStudentName_TextChanged(object sender, EventArgs e)
         {
             searchData(txtStudentName.Text, "StudentName");
+        }
+        int studentID;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            studentID = int.Parse(txtSelectedStudentID.Text);
+
+        }
+
+        int delstudentid;
+        private void dataGridViewStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            delstudentid = Convert.ToInt32(dataGridViewStudent.Rows[e.RowIndex].Cells["StudentID"].Value);
+            txtSelectedStudentID.Text = delstudentid.ToString();
         }
     }
 }

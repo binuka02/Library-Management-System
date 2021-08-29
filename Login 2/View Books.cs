@@ -163,9 +163,13 @@ namespace Login_2
             txtBookName.Text = "";
             txtBookName.Focus();
         }
+        int delbookid,bookid;
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            delbookid = Convert.ToInt32(dataGridBook.Rows[e.RowIndex].Cells["BookID"].Value);
+            txtSelectedBookID.Text = delbookid.ToString();
+            
 
         }
 
@@ -178,6 +182,50 @@ namespace Login_2
             DataTable set = new DataTable();
             adapter.Fill(set);
             dataGridBook.DataSource = set;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bookid = int.Parse(txtSelectedBookID.Text);
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string query = "DELETE FROM book WHERE BookID= "+bookid+";";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Deletion BookID = " + bookid + " Sucessful");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+                query = "SELECT * FROM book";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+
+                DataTable set = new DataTable();
+                adapter.Fill(set);
+                dataGridBook.DataSource = set;
+
+            }
+
+        }
+
+        private void txtSelectedBookID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bookid = Convert.ToInt32(txtSelectedBookID.Text);
+            UpdateBook updateBook = new UpdateBook(bookid);
+            updateBook.Show();
+            this.Hide();
+
         }
     }
 }

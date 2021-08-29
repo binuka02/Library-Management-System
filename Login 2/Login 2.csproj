@@ -166,6 +166,18 @@
     <Compile Include="Update and Delete Book.Designer.cs">
       <DependentUpon>Update and Delete Book.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBook.Designer.cs">
+      <DependentUpon>UpdateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStudent.Designer.cs">
+      <DependentUpon>UpdateStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="View Books.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +189,12 @@
     </Compile>
     <Compile Include="View Student.Designer.cs">
       <DependentUpon>View Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewIssuedBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewIssuedBook.Designer.cs">
+      <DependentUpon>ViewIssuedBook.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Add Books.resx">
       <DependentUpon>Add Books.cs</DependentUpon>
@@ -220,11 +238,20 @@
     <EmbeddedResource Include="Update and Delete Book.resx">
       <DependentUpon>Update and Delete Book.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBook.resx">
+      <DependentUpon>UpdateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudent.resx">
+      <DependentUpon>UpdateStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View Books.resx">
       <DependentUpon>View Books.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View Student.resx">
       <DependentUpon>View Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewIssuedBook.resx">
+      <DependentUpon>ViewIssuedBook.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

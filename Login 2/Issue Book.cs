@@ -58,7 +58,7 @@ namespace Login_2
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Query Added Successful");
+                MessageBox.Show("Book Issue Successful");
                 query = "UPDATE book SET BookQuantity=BookQuantity-1 WHERE BookID=" + txtBookID.Text + "";
                 cmd = new MySqlCommand(query, con);
                 cmd.ExecuteNonQuery();
@@ -73,6 +73,13 @@ namespace Login_2
             {
                 con.Close();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new ViewIssuedBook().Show();
+            this.Hide();
+
         }
     }
 }
