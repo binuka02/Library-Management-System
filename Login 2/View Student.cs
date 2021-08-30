@@ -80,6 +80,7 @@ namespace Login_2
             studentID = int.Parse(txtSelectedStudentID.Text);
 
         }
+        //rfregegegerg
 
         int delstudentid;
         private void dataGridViewStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
