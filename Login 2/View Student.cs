@@ -27,7 +27,7 @@ namespace Login_2
 
             DataTable set = new DataTable();
             adapter.Fill(set);
-            dataGridViewStudent.DataSource = set;
+            dataGridView1.DataSource = set;
             con.Close();
         }
 
@@ -66,7 +66,7 @@ namespace Login_2
 
             DataTable set = new DataTable();
             adapter.Fill(set);
-            dataGridViewStudent.DataSource = set;
+            dataGridView1.DataSource = set;
             con.Close();
         }
 
@@ -85,7 +85,12 @@ namespace Login_2
         int delstudentid;
         private void dataGridViewStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            delstudentid = Convert.ToInt32(dataGridViewStudent.Rows[e.RowIndex].Cells["StudentID"].Value);
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            delstudentid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["StudentID"].Value);
             txtSelectedStudentID.Text = delstudentid.ToString();
         }
     }
