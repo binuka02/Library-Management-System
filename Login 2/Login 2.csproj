@@ -110,17 +110,65 @@
     <Compile Include="Add Student.Designer.cs">
       <DependentUpon>Add Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="Biographies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biographies.Designer.cs">
+      <DependentUpon>Biographies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business.Designer.cs">
+      <DependentUpon>Business.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categories.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Categories.Designer.cs">
       <DependentUpon>Categories.cs</DependentUpon>
     </Compile>
+    <Compile Include="Comics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comics.Designer.cs">
+      <DependentUpon>Comics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entertainment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entertainment.Designer.cs">
+      <DependentUpon>Entertainment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Health and Fitness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Health and Fitness.Designer.cs">
+      <DependentUpon>Health and Fitness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home and Garden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home and Garden.Designer.cs">
+      <DependentUpon>Home and Garden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horror.Designer.cs">
+      <DependentUpon>Horror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kids.Designer.cs">
+      <DependentUpon>Kids.cs</DependentUpon>
     </Compile>
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
@@ -140,6 +188,12 @@
     <Compile Include="Issue Book.Designer.cs">
       <DependentUpon>Issue Book.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mysteries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mysteries.Designer.cs">
+      <DependentUpon>Mysteries.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.cs">
@@ -148,17 +202,29 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Religion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Religion.Designer.cs">
+      <DependentUpon>Religion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Return Book.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Return Book.Designer.cs">
       <DependentUpon>Return Book.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchBook.cs">
+    <Compile Include="Romance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SearchBook.Designer.cs">
-      <DependentUpon>SearchBook.cs</DependentUpon>
+    <Compile Include="Romance.Designer.cs">
+      <DependentUpon>Romance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sports.Designer.cs">
+      <DependentUpon>Sports.cs</DependentUpon>
     </Compile>
     <Compile Include="Update and Delete Book.cs">
       <SubType>Form</SubType>
@@ -202,11 +268,35 @@
     <EmbeddedResource Include="Add Student.resx">
       <DependentUpon>Add Student.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Biographies.resx">
+      <DependentUpon>Biographies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business.resx">
+      <DependentUpon>Business.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categories.resx">
       <DependentUpon>Categories.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Comics.resx">
+      <DependentUpon>Comics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entertainment.resx">
+      <DependentUpon>Entertainment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Health and Fitness.resx">
+      <DependentUpon>Health and Fitness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home and Garden.resx">
+      <DependentUpon>Home and Garden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horror.resx">
+      <DependentUpon>Horror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kids.resx">
+      <DependentUpon>Kids.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
@@ -216,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Issue Book.resx">
       <DependentUpon>Issue Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mysteries.resx">
+      <DependentUpon>Mysteries.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -229,11 +322,17 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Religion.resx">
+      <DependentUpon>Religion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Return Book.resx">
       <DependentUpon>Return Book.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SearchBook.resx">
-      <DependentUpon>SearchBook.cs</DependentUpon>
+    <EmbeddedResource Include="Romance.resx">
+      <DependentUpon>Romance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sports.resx">
+      <DependentUpon>Sports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update and Delete Book.resx">
       <DependentUpon>Update and Delete Book.cs</DependentUpon>

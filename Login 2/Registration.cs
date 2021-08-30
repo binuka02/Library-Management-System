@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
 namespace Login_2
@@ -23,10 +23,9 @@ namespace Login_2
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            //tfhyrhryhrhyhyryhd
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\Binuka Silva\OneDrive\Documents\LibrarySystemDB.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlCommand cmd = new SqlCommand();
-            SqlDataAdapter da = new SqlDataAdapter();
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string query = "INSERT INTO book VALUES('" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtUsername.Text + "','" + txtEmail.Text + "','" + txtPassword.Text + "')";
+            MySqlCommand cmd = new MySqlCommand(query, con);
 
             if (txtFirstName.Text == "" && txtLastName.Text == "")
             {
@@ -42,23 +41,24 @@ namespace Login_2
             }
             else if (txtPassword.Text == txtConfirmPassword.Text)
             {
-                con.Open();
-                string register = "INSERT INTO UserDetails VALUES ('" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtUsername.Text + "','" + txtEmail.Text + "','" + txtPassword.Text + "','" + txtConfirmPassword.Text + "')";
-                cmd = new SqlCommand(register, con);
-                cmd.ExecuteNonQuery();
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("You Have Registered Successfully", "REGISTRATION SUCCESS!");
 
-                con.Close();
-                txtFirstName.Text = "";
-                txtLastName.Text = "";
-                txtUsername.Text = "";
-                txtEmail.Text = "";
-                txtPassword.Text = "";
-                txtConfirmPassword.Text = "";
-
-                MessageBox.Show("You Have Registered Successfully","REGISTRATION SUCCESS!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    con.Close();
+                }
             }
-
-            else
+            
+            else if(txtPassword.Text != txtConfirmPassword.Text)
             {
                 MessageBox.Show("Password Does Not Match", "REGISTRATION FAILED!");
                 txtPassword.Text = "";

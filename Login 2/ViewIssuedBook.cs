@@ -60,5 +60,12 @@ namespace Login_2
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtBookID.Text = "";
+            txtStudentID.Text = "";
+            txtBookID.Focus();
+        }
     }
 }
