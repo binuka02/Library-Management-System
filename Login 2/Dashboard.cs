@@ -161,7 +161,7 @@ namespace Login_2
 
         private void btnCategories_MouseLeave(object sender, EventArgs e)
         {
-            btnStudent.BackColor = Color.Transparent;
+            btnCategories.BackColor = Color.Transparent;
         }
 
         private void btnAddStudents_MouseHover(object sender, EventArgs e)
@@ -200,7 +200,7 @@ namespace Login_2
         }
         private void btnAddBooks_MouseLeave(object sender, EventArgs e)
         {
-            btnBooks.BackColor = Color.Transparent;
+            btnAddBooks.BackColor = Color.Transparent;
         }
         private void btnAddBooks_ClientSizeChanged(object sender, EventArgs e)
         {
@@ -273,6 +273,11 @@ namespace Login_2
         {
             labelTime.Text = DateTime.Now.ToLongTimeString();
             labelDate.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

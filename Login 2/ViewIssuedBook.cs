@@ -55,5 +55,17 @@ namespace Login_2
         {
             searchData(txtStudentID.Text, "StudentID");
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtBookID.Text = "";
+            txtStudentID.Text = "";
+            txtBookID.Focus();
+        }
     }
 }
