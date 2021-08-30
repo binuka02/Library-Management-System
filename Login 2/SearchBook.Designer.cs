@@ -36,10 +36,14 @@ namespace Login_2
             // 
             // dataGridViewBook
             // 
+            this.dataGridViewBook.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewBook.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBook.Location = new System.Drawing.Point(12, 22);
+            this.dataGridViewBook.Location = new System.Drawing.Point(49, 27);
+            this.dataGridViewBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewBook.Name = "dataGridViewBook";
-            this.dataGridViewBook.Size = new System.Drawing.Size(737, 293);
+            this.dataGridViewBook.RowHeadersWidth = 51;
+            this.dataGridViewBook.Size = new System.Drawing.Size(973, 361);
             this.dataGridViewBook.TabIndex = 0;
             // 
             // btnClose
@@ -50,10 +54,10 @@ namespace Login_2
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(240, 329);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Location = new System.Drawing.Point(335, 428);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(277, 28);
+            this.btnClose.Size = new System.Drawing.Size(369, 34);
             this.btnClose.TabIndex = 7;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -61,11 +65,14 @@ namespace Login_2
             // 
             // SearchBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1073, 554);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dataGridViewBook);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SearchBook";
             this.Text = "SearchBook";
             this.Load += new System.EventHandler(this.SearchBook_Load);

@@ -53,12 +53,11 @@ namespace Login_2
             // 
             this.lblBack.AutoSize = true;
             this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblBack.Location = new System.Drawing.Point(515, 521);
-            this.lblBack.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBack.Location = new System.Drawing.Point(678, 631);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(22, 9);
+            this.lblBack.Size = new System.Drawing.Size(39, 17);
             this.lblBack.TabIndex = 7;
             this.lblBack.Text = "Back";
             this.lblBack.Click += new System.EventHandler(this.lblExit_Click);
@@ -78,10 +77,10 @@ namespace Login_2
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label1);
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.panel2.Location = new System.Drawing.Point(0, -22);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(0, -27);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(580, 562);
+            this.panel2.Size = new System.Drawing.Size(773, 692);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -90,11 +89,11 @@ namespace Login_2
             this.txtSelectedBookID.BackColor = System.Drawing.Color.White;
             this.txtSelectedBookID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSelectedBookID.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSelectedBookID.Location = new System.Drawing.Point(267, 416);
-            this.txtSelectedBookID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSelectedBookID.Location = new System.Drawing.Point(356, 512);
+            this.txtSelectedBookID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSelectedBookID.Multiline = true;
             this.txtSelectedBookID.Name = "txtSelectedBookID";
-            this.txtSelectedBookID.Size = new System.Drawing.Size(168, 26);
+            this.txtSelectedBookID.Size = new System.Drawing.Size(223, 32);
             this.txtSelectedBookID.TabIndex = 22;
             this.txtSelectedBookID.TextChanged += new System.EventHandler(this.txtSelectedBookID_TextChanged);
             // 
@@ -104,10 +103,9 @@ namespace Login_2
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(155, 423);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(207, 521);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 13);
+            this.label3.Size = new System.Drawing.Size(134, 16);
             this.label3.TabIndex = 21;
             this.label3.Text = "Selected Book ID";
             // 
@@ -119,10 +117,10 @@ namespace Login_2
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(152, 459);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(203, 565);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(277, 32);
+            this.button2.Size = new System.Drawing.Size(369, 39);
             this.button2.TabIndex = 20;
             this.button2.Text = "DELETE";
             this.button2.UseVisualStyleBackColor = false;
@@ -136,10 +134,10 @@ namespace Login_2
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(152, 495);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Location = new System.Drawing.Point(203, 609);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(277, 32);
+            this.btnUpdate.Size = new System.Drawing.Size(369, 39);
             this.btnUpdate.TabIndex = 19;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -147,10 +145,14 @@ namespace Login_2
             // 
             // dataGridBook
             // 
+            this.dataGridBook.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridBook.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridBook.Location = new System.Drawing.Point(12, 191);
+            this.dataGridBook.Location = new System.Drawing.Point(16, 235);
+            this.dataGridBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridBook.Name = "dataGridBook";
-            this.dataGridBook.Size = new System.Drawing.Size(556, 208);
+            this.dataGridBook.RowHeadersWidth = 51;
+            this.dataGridBook.Size = new System.Drawing.Size(741, 256);
             this.dataGridBook.TabIndex = 18;
             this.dataGridBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -182,14 +184,14 @@ namespace Login_2
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(43, 232);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(57, 286);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(495, 180);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(660, 222);
             this.guna2DataGridView1.TabIndex = 10;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -219,11 +221,11 @@ namespace Login_2
             this.txtBookName.BackColor = System.Drawing.Color.White;
             this.txtBookName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBookName.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookName.Location = new System.Drawing.Point(285, 151);
-            this.txtBookName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBookName.Location = new System.Drawing.Point(380, 186);
+            this.txtBookName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBookName.Multiline = true;
             this.txtBookName.Name = "txtBookName";
-            this.txtBookName.Size = new System.Drawing.Size(168, 26);
+            this.txtBookName.Size = new System.Drawing.Size(223, 32);
             this.txtBookName.TabIndex = 3;
             this.txtBookName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -233,10 +235,9 @@ namespace Login_2
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label2.Location = new System.Drawing.Point(301, 70);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(401, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 44);
+            this.label2.Size = new System.Drawing.Size(203, 55);
             this.label2.TabIndex = 0;
             this.label2.Text = "BOOKS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -247,10 +248,9 @@ namespace Login_2
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(155, 156);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(207, 192);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 13);
+            this.label9.Size = new System.Drawing.Size(145, 16);
             this.label9.TabIndex = 2;
             this.label9.Text = "Search Book Name";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -261,22 +261,21 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(113, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(151, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 74);
+            this.label1.Size = new System.Drawing.Size(253, 91);
             this.label1.TabIndex = 0;
             this.label1.Text = "View";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // View_Books
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 540);
+            this.ClientSize = new System.Drawing.Size(773, 665);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "View_Books";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View_Books";
