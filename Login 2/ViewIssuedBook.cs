@@ -21,7 +21,7 @@ namespace Login_2
         string query;
         private void ViewIssuedBook_Load(object sender, EventArgs e)
         {
-            query = "SELECT * FROM issueBook";
+            query = "select issuebook.BookID, book.BookName, issuebook.StudentID, student.StudentName from issuebook inner join book on book.BookID = issuebook.BookID inner join student on student.StudentID = issuebook.StudentID;";
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
 
             DataTable set = new DataTable();
@@ -54,6 +54,11 @@ namespace Login_2
         private void txtBookName_TextChanged(object sender, EventArgs e)
         {
             searchData(txtStudentID.Text, "StudentID");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
