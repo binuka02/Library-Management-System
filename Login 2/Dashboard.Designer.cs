@@ -32,6 +32,7 @@ namespace Login_2
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblWelcome = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,9 +53,7 @@ namespace Login_2
             this.btnStudent = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.btnTransaction = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelBooks.SuspendLayout();
@@ -78,6 +77,19 @@ namespace Login_2
             this.panel1.Size = new System.Drawing.Size(1280, 720);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(12, 678);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "EXIT PAGE";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblWelcome
             // 
@@ -139,7 +151,6 @@ namespace Login_2
             this.panel2.Controls.Add(this.panelStudents);
             this.panel2.Controls.Add(this.btnCategories);
             this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.btnTransaction);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -179,7 +190,7 @@ namespace Login_2
             this.panelBooks.Controls.Add(this.btnViewBooks);
             this.panelBooks.Controls.Add(this.btnAddBooks);
             this.panelBooks.Controls.Add(this.btnBooks);
-            this.panelBooks.Location = new System.Drawing.Point(573, 24);
+            this.panelBooks.Location = new System.Drawing.Point(718, 22);
             this.panelBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBooks.Name = "panelBooks";
             this.panelBooks.Size = new System.Drawing.Size(149, 38);
@@ -314,7 +325,7 @@ namespace Login_2
             this.panelStudents.Controls.Add(this.btnAddStudents);
             this.panelStudents.Controls.Add(this.btnStudent);
             this.panelStudents.ForeColor = System.Drawing.Color.White;
-            this.panelStudents.Location = new System.Drawing.Point(728, 24);
+            this.panelStudents.Location = new System.Drawing.Point(873, 22);
             this.panelStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelStudents.Name = "panelStudents";
             this.panelStudents.Size = new System.Drawing.Size(120, 38);
@@ -388,7 +399,7 @@ namespace Login_2
             this.btnCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategories.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategories.ForeColor = System.Drawing.Color.White;
-            this.btnCategories.Location = new System.Drawing.Point(854, 23);
+            this.btnCategories.Location = new System.Drawing.Point(1010, 22);
             this.btnCategories.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCategories.Name = "btnCategories";
             this.btnCategories.Size = new System.Drawing.Size(132, 39);
@@ -420,44 +431,10 @@ namespace Login_2
             this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
             this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
-            // btnTransaction
-            // 
-            this.btnTransaction.BackColor = System.Drawing.Color.Transparent;
-            this.btnTransaction.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTransaction.FlatAppearance.BorderSize = 0;
-            this.btnTransaction.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnTransaction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTransaction.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTransaction.ForeColor = System.Drawing.Color.White;
-            this.btnTransaction.Location = new System.Drawing.Point(992, 20);
-            this.btnTransaction.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTransaction.Name = "btnTransaction";
-            this.btnTransaction.Size = new System.Drawing.Size(139, 42);
-            this.btnTransaction.TabIndex = 0;
-            this.btnTransaction.Text = "TRANSACTION";
-            this.btnTransaction.UseVisualStyleBackColor = false;
-            this.btnTransaction.Click += new System.EventHandler(this.btnTransaction_Click);
-            this.btnTransaction.MouseLeave += new System.EventHandler(this.btnTransaction_MouseLeave);
-            this.btnTransaction.MouseHover += new System.EventHandler(this.btnTransaction_MouseHover);
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 678);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "EXIT PAGE";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Dashboard
             // 
@@ -486,7 +463,6 @@ namespace Login_2
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCategories;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnTransaction;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
