@@ -30,9 +30,9 @@ namespace Login_2
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataBiographiess = new System.Windows.Forms.DataGridView();
+            this.dataBiographies = new System.Windows.Forms.DataGridView();
             this.btnOK = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBiographiess)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBiographies)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -41,24 +41,27 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(192, 41);
+            this.label1.Location = new System.Drawing.Point(144, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(484, 69);
+            this.label1.Size = new System.Drawing.Size(385, 55);
             this.label1.TabIndex = 2;
             this.label1.Text = "BIOGRAPHIES";
             // 
-            // dataBiographiess
+            // dataBiographies
             // 
-            this.dataBiographiess.BackgroundColor = System.Drawing.Color.White;
-            this.dataBiographiess.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataBiographiess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataBiographiess.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.dataBiographiess.Location = new System.Drawing.Point(41, 139);
-            this.dataBiographiess.Name = "dataBiographiess";
-            this.dataBiographiess.RowHeadersWidth = 51;
-            this.dataBiographiess.RowTemplate.Height = 24;
-            this.dataBiographiess.Size = new System.Drawing.Size(805, 336);
-            this.dataBiographiess.TabIndex = 3;
+            this.dataBiographies.BackgroundColor = System.Drawing.Color.White;
+            this.dataBiographies.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataBiographies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataBiographies.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.dataBiographies.Location = new System.Drawing.Point(31, 113);
+            this.dataBiographies.Margin = new System.Windows.Forms.Padding(2);
+            this.dataBiographies.Name = "dataBiographies";
+            this.dataBiographies.RowHeadersWidth = 51;
+            this.dataBiographies.RowTemplate.Height = 24;
+            this.dataBiographies.Size = new System.Drawing.Size(604, 273);
+            this.dataBiographies.TabIndex = 3;
+            this.dataBiographies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBiographiess_CellContentClick);
             // 
             // btnOK
             // 
@@ -68,10 +71,10 @@ namespace Login_2
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(262, 515);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOK.Location = new System.Drawing.Point(196, 418);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(2);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(369, 39);
+            this.btnOK.Size = new System.Drawing.Size(277, 32);
             this.btnOK.TabIndex = 21;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
@@ -79,19 +82,20 @@ namespace Login_2
             // 
             // Biographies
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(679, 488);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.dataBiographiess);
+            this.Controls.Add(this.dataBiographies);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Biographies";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Biographies";
             this.Load += new System.EventHandler(this.Biographies_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataBiographiess)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBiographies)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,7 +104,7 @@ namespace Login_2
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataBiographiess;
+        private System.Windows.Forms.DataGridView dataBiographies;
         private System.Windows.Forms.Button btnOK;
     }
 }

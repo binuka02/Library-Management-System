@@ -18,24 +18,26 @@ namespace Login_2
             InitializeComponent();
         }
 
+
         private void btnOK_Click(object sender, EventArgs e)
         {
             this.Hide();
             new Categories().Show();
         }
 
-        public void loadData()
+        private void Biographies_Load(object sender, EventArgs e)
         {
-            query = "SELECT * FROM student";
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string query = "SELECT * FROM book WHERE Category='Biographies'";
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
 
             DataTable set = new DataTable();
             adapter.Fill(set);
-            dataGridView1.DataSource = set;
+            dataBiographies.DataSource = set;
             con.Close();
         }
 
-        private void Biographies_Load(object sender, EventArgs e)
+        private void dataBiographiess_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
