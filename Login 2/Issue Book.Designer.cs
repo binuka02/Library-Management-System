@@ -29,10 +29,8 @@ namespace Login_2
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.txtBookID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.lblBack = new System.Windows.Forms.Label();
@@ -41,20 +39,9 @@ namespace Login_2
             this.buttonSearch = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(173, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 69);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ISSUE";
             // 
             // txtBookID
             // 
@@ -80,18 +67,6 @@ namespace Login_2
             this.label9.TabIndex = 4;
             this.label9.Text = "Book ID";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label2.Location = new System.Drawing.Point(402, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 69);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "BOOKS";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -105,7 +80,6 @@ namespace Login_2
             this.panel1.Controls.Add(this.buttonClear);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.buttonUpdate);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(-3, -7);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -121,7 +95,7 @@ namespace Login_2
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(227, 514);
+            this.button1.Location = new System.Drawing.Point(227, 518);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(369, 34);
@@ -217,6 +191,18 @@ namespace Login_2
             this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label2.Location = new System.Drawing.Point(183, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(479, 69);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ISSUE  BOOKS";
+            // 
             // Issue_Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -236,10 +222,8 @@ namespace Login_2
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBookID;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Label label3;
@@ -248,5 +232,6 @@ namespace Login_2
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Label lblBack;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }
