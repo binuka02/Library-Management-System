@@ -45,11 +45,13 @@ namespace Login_2
             new Dashboard().Show();
             this.Hide();
         }
+        string date;
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
+            date = DateTime.Now.ToString("dd MMMM yyyy");
             MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            string query = "INSERT INTO issueBook VALUES(" + txtBookID.Text + ","+txtStudentID.Text+")";
+            string query = "INSERT INTO issueBook(BookID,StudentID,IssuedDate) VALUES(" + txtBookID.Text + ","+txtStudentID.Text+",'"+date+"')";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
             try
@@ -58,6 +60,9 @@ namespace Login_2
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Book Issue Successful");
                 query = "UPDATE book SET BookQuantity=BookQuantity-1 WHERE BookID=" + txtBookID.Text + "";
+                cmd = new MySqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                query = "INSERT INTO bookstatus VALUES(" + txtBookID.Text + "," + txtStudentID.Text + ",'" + date + "','Issued')";
                 cmd = new MySqlCommand(query, con);
                 cmd.ExecuteNonQuery();
 

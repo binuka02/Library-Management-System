@@ -103,7 +103,7 @@ namespace Login_2
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Query Added Successful");
+                MessageBox.Show("Book Added Successful");
 
             }
             catch(Exception ex)

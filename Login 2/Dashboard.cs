@@ -251,12 +251,12 @@ namespace Login_2
 
         private void btnTransaction_MouseHover(object sender, EventArgs e)
         {
-            btnTransaction.BackColor = Color.Black;
+            
         }
 
         private void btnTransaction_MouseLeave(object sender, EventArgs e)
         {
-            btnTransaction.BackColor = Color.Transparent;
+           
         }
 
         private void button4_MouseHover(object sender, EventArgs e)
