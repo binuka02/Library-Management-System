@@ -50,6 +50,7 @@ namespace Login_2
 
         private void button4_Click(object sender, EventArgs e)
         {
+            new InventoryReport().Show();
 
         }
 

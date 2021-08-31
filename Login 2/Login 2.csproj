@@ -164,6 +164,12 @@
     <Compile Include="Horror.Designer.cs">
       <DependentUpon>Horror.cs</DependentUpon>
     </Compile>
+    <Compile Include="InventoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryReport.Designer.cs">
+      <DependentUpon>InventoryReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kids.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Horror.resx">
       <DependentUpon>Horror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryReport.resx">
+      <DependentUpon>InventoryReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kids.resx">
       <DependentUpon>Kids.cs</DependentUpon>
