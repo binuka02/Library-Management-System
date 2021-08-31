@@ -20,7 +20,7 @@ namespace Login_2
         MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
         string query;
 
-        private void View_Borrower_Load(object sender, EventArgs e)
+        public void loadData()
         {
             query = "SELECT * FROM student";
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
@@ -29,6 +29,10 @@ namespace Login_2
             adapter.Fill(set);
             dataGridView1.DataSource = set;
             con.Close();
+        }
+        private void View_Borrower_Load(object sender, EventArgs e)
+        {
+            loadData();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -78,6 +82,26 @@ namespace Login_2
         private void button1_Click(object sender, EventArgs e)
         {
             studentID = int.Parse(txtSelectedStudentID.Text);
+            query = "DELETE FROM student WHERE StudentID="+studentID+"";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Deletion Successful");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+                loadData();
+            }
+
 
         }
         

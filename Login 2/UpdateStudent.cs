@@ -43,6 +43,7 @@ namespace Login_2
             }
         }
 
+
         private void UpdateStudent_Load(object sender, EventArgs e)
         {
             query = "SELECT * FROM student where StudentID=" + studentID + "";

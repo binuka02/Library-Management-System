@@ -218,6 +218,12 @@ namespace Login_2
         {
 
         }
+        int selectedBookID;
+        private void dataGridBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedBookID = Convert.ToInt32(dataGridBook.Rows[e.RowIndex].Cells["BookID"].Value);
+            txtSelectedBookID.Text = selectedBookID.ToString();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
