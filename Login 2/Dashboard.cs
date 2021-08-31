@@ -93,13 +93,13 @@ namespace Login_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (panelBooks.Height == 213)
+            if (panelBooks.Height == 182)
             {
                 panelBooks.Height = 40;
             }
             else
             {
-                panelBooks.Height = 213;
+                panelBooks.Height = 182;
             }
         }
 
@@ -242,12 +242,12 @@ namespace Login_2
 
         private void btnViewandUpdate_MouseHover(object sender, EventArgs e)
         {
-            btnViewandUpdate.BackColor = Color.Black;
+            
         }
 
         private void btnViewandUpdate_MouseLeave(object sender, EventArgs e)
         {
-            btnViewandUpdate.BackColor = Color.Transparent;
+           
         }
 
         private void btnTransaction_MouseHover(object sender, EventArgs e)

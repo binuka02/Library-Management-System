@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Login_2
 {
@@ -21,6 +22,22 @@ namespace Login_2
         {
             this.Hide();
             new Categories().Show();
+        }
+
+        public void loadData()
+        {
+            query = "SELECT * FROM student";
+            MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+
+            DataTable set = new DataTable();
+            adapter.Fill(set);
+            dataGridView1.DataSource = set;
+            con.Close();
+        }
+
+        private void Biographies_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -90,6 +90,7 @@ namespace Login_2
             this.Name = "Biographies";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Biographies";
+            this.Load += new System.EventHandler(this.Biographies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataBiographiess)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

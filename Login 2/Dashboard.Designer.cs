@@ -43,7 +43,6 @@ namespace Login_2
             this.panelBooks = new System.Windows.Forms.Panel();
             this.btnReturnBooks = new System.Windows.Forms.Button();
             this.btnIssueBooks = new System.Windows.Forms.Button();
-            this.btnViewandUpdate = new System.Windows.Forms.Button();
             this.btnViewBooks = new System.Windows.Forms.Button();
             this.btnAddBooks = new System.Windows.Forms.Button();
             this.btnBooks = new System.Windows.Forms.Button();
@@ -186,7 +185,6 @@ namespace Login_2
             // 
             this.panelBooks.Controls.Add(this.btnReturnBooks);
             this.panelBooks.Controls.Add(this.btnIssueBooks);
-            this.panelBooks.Controls.Add(this.btnViewandUpdate);
             this.panelBooks.Controls.Add(this.btnViewBooks);
             this.panelBooks.Controls.Add(this.btnAddBooks);
             this.panelBooks.Controls.Add(this.btnBooks);
@@ -208,7 +206,7 @@ namespace Login_2
             this.btnReturnBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturnBooks.Name = "btnReturnBooks";
             this.btnReturnBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnReturnBooks.Size = new System.Drawing.Size(125, 28);
+            this.btnReturnBooks.Size = new System.Drawing.Size(149, 28);
             this.btnReturnBooks.TabIndex = 0;
             this.btnReturnBooks.Text = "RETURN BOOKS";
             this.btnReturnBooks.UseVisualStyleBackColor = false;
@@ -228,33 +226,13 @@ namespace Login_2
             this.btnIssueBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnIssueBooks.Name = "btnIssueBooks";
             this.btnIssueBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnIssueBooks.Size = new System.Drawing.Size(125, 28);
+            this.btnIssueBooks.Size = new System.Drawing.Size(149, 28);
             this.btnIssueBooks.TabIndex = 0;
             this.btnIssueBooks.Text = "ISSUE BOOKS";
             this.btnIssueBooks.UseVisualStyleBackColor = false;
             this.btnIssueBooks.Click += new System.EventHandler(this.button5_Click);
             this.btnIssueBooks.MouseLeave += new System.EventHandler(this.btnIssueBooks_MouseLeave);
             this.btnIssueBooks.MouseHover += new System.EventHandler(this.btnIssueBooks_MouseHover);
-            // 
-            // btnViewandUpdate
-            // 
-            this.btnViewandUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnViewandUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnViewandUpdate.FlatAppearance.BorderSize = 0;
-            this.btnViewandUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewandUpdate.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewandUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnViewandUpdate.Location = new System.Drawing.Point(-24, 181);
-            this.btnViewandUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnViewandUpdate.Name = "btnViewandUpdate";
-            this.btnViewandUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnViewandUpdate.Size = new System.Drawing.Size(183, 28);
-            this.btnViewandUpdate.TabIndex = 0;
-            this.btnViewandUpdate.Text = "UPDATE and DELETE";
-            this.btnViewandUpdate.UseVisualStyleBackColor = false;
-            this.btnViewandUpdate.Click += new System.EventHandler(this.button8_Click);
-            this.btnViewandUpdate.MouseLeave += new System.EventHandler(this.btnViewandUpdate_MouseLeave);
-            this.btnViewandUpdate.MouseHover += new System.EventHandler(this.btnViewandUpdate_MouseHover);
             // 
             // btnViewBooks
             // 
@@ -268,7 +246,7 @@ namespace Login_2
             this.btnViewBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewBooks.Name = "btnViewBooks";
             this.btnViewBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnViewBooks.Size = new System.Drawing.Size(125, 28);
+            this.btnViewBooks.Size = new System.Drawing.Size(149, 28);
             this.btnViewBooks.TabIndex = 0;
             this.btnViewBooks.Text = "VIEW BOOKS";
             this.btnViewBooks.UseVisualStyleBackColor = false;
@@ -288,7 +266,7 @@ namespace Login_2
             this.btnAddBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddBooks.Name = "btnAddBooks";
             this.btnAddBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnAddBooks.Size = new System.Drawing.Size(125, 28);
+            this.btnAddBooks.Size = new System.Drawing.Size(149, 28);
             this.btnAddBooks.TabIndex = 0;
             this.btnAddBooks.Text = "ADD BOOKS";
             this.btnAddBooks.UseVisualStyleBackColor = false;
@@ -474,7 +452,6 @@ namespace Login_2
         private System.Windows.Forms.Panel panelBooks;
         private System.Windows.Forms.Button btnReturnBooks;
         private System.Windows.Forms.Button btnIssueBooks;
-        private System.Windows.Forms.Button btnViewandUpdate;
         private System.Windows.Forms.Button btnViewBooks;
         private System.Windows.Forms.Button btnAddBooks;
         private System.Windows.Forms.Button btnBooks;
