@@ -41,7 +41,7 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(346, 33);
+            this.label1.Location = new System.Drawing.Point(475, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 69);
             this.label1.TabIndex = 42;
@@ -56,7 +56,7 @@ namespace Login_2
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(263, 514);
+            this.btnOK.Location = new System.Drawing.Point(370, 514);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(369, 39);
@@ -75,7 +75,7 @@ namespace Login_2
             this.dataKids.Name = "dataKids";
             this.dataKids.RowHeadersWidth = 51;
             this.dataKids.RowTemplate.Height = 24;
-            this.dataKids.Size = new System.Drawing.Size(805, 336);
+            this.dataKids.Size = new System.Drawing.Size(1009, 336);
             this.dataKids.TabIndex = 40;
             this.dataKids.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBiographiess_CellContentClick);
             // 
@@ -84,7 +84,7 @@ namespace Login_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dataKids);
@@ -92,6 +92,7 @@ namespace Login_2
             this.Name = "Kids";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kids";
+            this.Load += new System.EventHandler(this.Kids_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataKids)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

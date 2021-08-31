@@ -33,10 +33,6 @@ namespace Login_2
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblWelcome = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelDate = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
@@ -46,13 +42,13 @@ namespace Login_2
             this.btnViewBooks = new System.Windows.Forms.Button();
             this.btnAddBooks = new System.Windows.Forms.Button();
             this.btnBooks = new System.Windows.Forms.Button();
-            this.panelStudents = new System.Windows.Forms.Panel();
-            this.btnViewStudents = new System.Windows.Forms.Button();
-            this.btnAddStudents = new System.Windows.Forms.Button();
-            this.btnStudent = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnStudent = new System.Windows.Forms.Button();
+            this.btnAddStudents = new System.Windows.Forms.Button();
+            this.btnViewStudents = new System.Windows.Forms.Button();
+            this.panelStudents = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelBooks.SuspendLayout();
@@ -63,10 +59,6 @@ namespace Login_2
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.lblWelcome);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Lucida Calligraphy", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -89,57 +81,6 @@ namespace Login_2
             this.label4.TabIndex = 3;
             this.label4.Text = "EXIT PAGE";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // lblWelcome
-            // 
-            this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
-            this.lblWelcome.Font = new System.Drawing.Font("Lucida Calligraphy", 40F, System.Drawing.FontStyle.Bold);
-            this.lblWelcome.ForeColor = System.Drawing.Color.White;
-            this.lblWelcome.Location = new System.Drawing.Point(805, 480);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(346, 89);
-            this.lblWelcome.TabIndex = 2;
-            this.lblWelcome.Text = "Welcome!";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(875, 353);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(278, 101);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "System";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label2.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label2.Location = new System.Drawing.Point(713, 255);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(304, 101);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Library";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Lucida Bright", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(879, 187);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 68);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Online";
             // 
             // panel2
             // 
@@ -296,77 +237,6 @@ namespace Login_2
             this.btnBooks.MouseLeave += new System.EventHandler(this.btnBooks_MouseLeave);
             this.btnBooks.MouseHover += new System.EventHandler(this.btnBooks_MouseHover);
             // 
-            // panelStudents
-            // 
-            this.panelStudents.BackColor = System.Drawing.Color.Transparent;
-            this.panelStudents.Controls.Add(this.btnViewStudents);
-            this.panelStudents.Controls.Add(this.btnAddStudents);
-            this.panelStudents.Controls.Add(this.btnStudent);
-            this.panelStudents.ForeColor = System.Drawing.Color.White;
-            this.panelStudents.Location = new System.Drawing.Point(873, 22);
-            this.panelStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelStudents.Name = "panelStudents";
-            this.panelStudents.Size = new System.Drawing.Size(120, 38);
-            this.panelStudents.TabIndex = 6;
-            // 
-            // btnViewStudents
-            // 
-            this.btnViewStudents.BackColor = System.Drawing.Color.Transparent;
-            this.btnViewStudents.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnViewStudents.FlatAppearance.BorderSize = 0;
-            this.btnViewStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewStudents.ForeColor = System.Drawing.Color.White;
-            this.btnViewStudents.Location = new System.Drawing.Point(-1, 82);
-            this.btnViewStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnViewStudents.Name = "btnViewStudents";
-            this.btnViewStudents.Size = new System.Drawing.Size(129, 28);
-            this.btnViewStudents.TabIndex = 0;
-            this.btnViewStudents.Text = "VIEW STUDENTS";
-            this.btnViewStudents.UseVisualStyleBackColor = false;
-            this.btnViewStudents.Click += new System.EventHandler(this.button9_Click);
-            this.btnViewStudents.MouseLeave += new System.EventHandler(this.btnViewStudents_MouseLeave);
-            this.btnViewStudents.MouseHover += new System.EventHandler(this.btnViewStudents_MouseHover);
-            // 
-            // btnAddStudents
-            // 
-            this.btnAddStudents.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddStudents.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddStudents.FlatAppearance.BorderSize = 0;
-            this.btnAddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddStudents.ForeColor = System.Drawing.Color.White;
-            this.btnAddStudents.Location = new System.Drawing.Point(-1, 46);
-            this.btnAddStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddStudents.Name = "btnAddStudents";
-            this.btnAddStudents.Size = new System.Drawing.Size(129, 28);
-            this.btnAddStudents.TabIndex = 0;
-            this.btnAddStudents.Text = "ADD STUDENTS";
-            this.btnAddStudents.UseVisualStyleBackColor = false;
-            this.btnAddStudents.Click += new System.EventHandler(this.button7_Click);
-            this.btnAddStudents.MouseLeave += new System.EventHandler(this.btnAddStudents_MouseLeave);
-            this.btnAddStudents.MouseHover += new System.EventHandler(this.btnAddStudents_MouseHover);
-            // 
-            // btnStudent
-            // 
-            this.btnStudent.BackColor = System.Drawing.Color.Transparent;
-            this.btnStudent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStudent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnStudent.FlatAppearance.BorderSize = 0;
-            this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStudent.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
-            this.btnStudent.ForeColor = System.Drawing.Color.White;
-            this.btnStudent.Location = new System.Drawing.Point(0, 0);
-            this.btnStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnStudent.Name = "btnStudent";
-            this.btnStudent.Size = new System.Drawing.Size(120, 39);
-            this.btnStudent.TabIndex = 0;
-            this.btnStudent.Text = "STUDENTS";
-            this.btnStudent.UseVisualStyleBackColor = false;
-            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
-            this.btnStudent.MouseLeave += new System.EventHandler(this.btnStudent_MouseLeave);
-            this.btnStudent.MouseHover += new System.EventHandler(this.btnStudent_MouseHover);
-            // 
             // btnCategories
             // 
             this.btnCategories.BackColor = System.Drawing.Color.Transparent;
@@ -414,6 +284,77 @@ namespace Login_2
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnStudent
+            // 
+            this.btnStudent.BackColor = System.Drawing.Color.Transparent;
+            this.btnStudent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStudent.FlatAppearance.BorderSize = 0;
+            this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStudent.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
+            this.btnStudent.ForeColor = System.Drawing.Color.White;
+            this.btnStudent.Location = new System.Drawing.Point(0, 0);
+            this.btnStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Size = new System.Drawing.Size(120, 39);
+            this.btnStudent.TabIndex = 0;
+            this.btnStudent.Text = "STUDENTS";
+            this.btnStudent.UseVisualStyleBackColor = false;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
+            this.btnStudent.MouseLeave += new System.EventHandler(this.btnStudent_MouseLeave);
+            this.btnStudent.MouseHover += new System.EventHandler(this.btnStudent_MouseHover);
+            // 
+            // btnAddStudents
+            // 
+            this.btnAddStudents.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddStudents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddStudents.FlatAppearance.BorderSize = 0;
+            this.btnAddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStudents.ForeColor = System.Drawing.Color.White;
+            this.btnAddStudents.Location = new System.Drawing.Point(-1, 46);
+            this.btnAddStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddStudents.Name = "btnAddStudents";
+            this.btnAddStudents.Size = new System.Drawing.Size(129, 28);
+            this.btnAddStudents.TabIndex = 0;
+            this.btnAddStudents.Text = "ADD STUDENTS";
+            this.btnAddStudents.UseVisualStyleBackColor = false;
+            this.btnAddStudents.Click += new System.EventHandler(this.button7_Click);
+            this.btnAddStudents.MouseLeave += new System.EventHandler(this.btnAddStudents_MouseLeave);
+            this.btnAddStudents.MouseHover += new System.EventHandler(this.btnAddStudents_MouseHover);
+            // 
+            // btnViewStudents
+            // 
+            this.btnViewStudents.BackColor = System.Drawing.Color.Transparent;
+            this.btnViewStudents.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewStudents.FlatAppearance.BorderSize = 0;
+            this.btnViewStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewStudents.ForeColor = System.Drawing.Color.White;
+            this.btnViewStudents.Location = new System.Drawing.Point(-1, 82);
+            this.btnViewStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewStudents.Name = "btnViewStudents";
+            this.btnViewStudents.Size = new System.Drawing.Size(129, 28);
+            this.btnViewStudents.TabIndex = 0;
+            this.btnViewStudents.Text = "VIEW STUDENTS";
+            this.btnViewStudents.UseVisualStyleBackColor = false;
+            this.btnViewStudents.Click += new System.EventHandler(this.button9_Click);
+            this.btnViewStudents.MouseLeave += new System.EventHandler(this.btnViewStudents_MouseLeave);
+            this.btnViewStudents.MouseHover += new System.EventHandler(this.btnViewStudents_MouseHover);
+            // 
+            // panelStudents
+            // 
+            this.panelStudents.BackColor = System.Drawing.Color.Transparent;
+            this.panelStudents.Controls.Add(this.btnViewStudents);
+            this.panelStudents.Controls.Add(this.btnAddStudents);
+            this.panelStudents.Controls.Add(this.btnStudent);
+            this.panelStudents.ForeColor = System.Drawing.Color.White;
+            this.panelStudents.Location = new System.Drawing.Point(873, 22);
+            this.panelStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelStudents.Name = "panelStudents";
+            this.panelStudents.Size = new System.Drawing.Size(120, 38);
+            this.panelStudents.TabIndex = 6;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -441,14 +382,6 @@ namespace Login_2
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCategories;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblWelcome;
-        private System.Windows.Forms.Panel panelStudents;
-        private System.Windows.Forms.Button btnViewStudents;
-        private System.Windows.Forms.Button btnAddStudents;
-        private System.Windows.Forms.Button btnStudent;
         private System.Windows.Forms.Panel panelBooks;
         private System.Windows.Forms.Button btnReturnBooks;
         private System.Windows.Forms.Button btnIssueBooks;
@@ -459,5 +392,9 @@ namespace Login_2
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelStudents;
+        private System.Windows.Forms.Button btnViewStudents;
+        private System.Windows.Forms.Button btnAddStudents;
+        private System.Windows.Forms.Button btnStudent;
     }
 }

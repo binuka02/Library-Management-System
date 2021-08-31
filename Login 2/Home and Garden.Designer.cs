@@ -41,7 +41,7 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(174, 40);
+            this.label1.Location = new System.Drawing.Point(265, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(572, 69);
             this.label1.TabIndex = 36;
@@ -55,7 +55,7 @@ namespace Login_2
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(272, 517);
+            this.btnOK.Location = new System.Drawing.Point(337, 520);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(369, 39);
@@ -74,7 +74,7 @@ namespace Login_2
             this.dataHomeandGarden.Name = "dataHomeandGarden";
             this.dataHomeandGarden.RowHeadersWidth = 51;
             this.dataHomeandGarden.RowTemplate.Height = 24;
-            this.dataHomeandGarden.Size = new System.Drawing.Size(805, 336);
+            this.dataHomeandGarden.Size = new System.Drawing.Size(1007, 336);
             this.dataHomeandGarden.TabIndex = 34;
             // 
             // Home_and_Garden
@@ -82,7 +82,7 @@ namespace Login_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dataHomeandGarden);
@@ -90,6 +90,7 @@ namespace Login_2
             this.Name = "Home_and_Garden";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home_and_Garden";
+            this.Load += new System.EventHandler(this.Home_and_Garden_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataHomeandGarden)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

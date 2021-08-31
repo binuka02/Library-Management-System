@@ -134,11 +134,11 @@ namespace Login_2
             // 
             this.lblBack.AutoSize = true;
             this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblBack.Location = new System.Drawing.Point(647, 612);
+            this.lblBack.Location = new System.Drawing.Point(680, 610);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(47, 20);
+            this.lblBack.Size = new System.Drawing.Size(43, 17);
             this.lblBack.TabIndex = 11;
             this.lblBack.Text = "Back";
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click_1);

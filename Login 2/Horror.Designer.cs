@@ -41,7 +41,7 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(280, 33);
+            this.label1.Location = new System.Drawing.Point(410, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(313, 69);
             this.label1.TabIndex = 39;
@@ -56,7 +56,7 @@ namespace Login_2
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(269, 514);
+            this.btnOK.Location = new System.Drawing.Point(368, 514);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(369, 39);
@@ -71,11 +71,11 @@ namespace Login_2
             this.dataHorror.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataHorror.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataHorror.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.dataHorror.Location = new System.Drawing.Point(44, 134);
+            this.dataHorror.Location = new System.Drawing.Point(38, 133);
             this.dataHorror.Name = "dataHorror";
             this.dataHorror.RowHeadersWidth = 51;
             this.dataHorror.RowTemplate.Height = 24;
-            this.dataHorror.Size = new System.Drawing.Size(805, 336);
+            this.dataHorror.Size = new System.Drawing.Size(1019, 336);
             this.dataHorror.TabIndex = 37;
             this.dataHorror.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBiographiess_CellContentClick);
             // 
@@ -84,7 +84,7 @@ namespace Login_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dataHorror);
@@ -92,6 +92,7 @@ namespace Login_2
             this.Name = "Horror";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Horror";
+            this.Load += new System.EventHandler(this.Horror_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataHorror)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

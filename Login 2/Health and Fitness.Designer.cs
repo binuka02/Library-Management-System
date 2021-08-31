@@ -31,8 +31,8 @@ namespace Login_2
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
-            this.dataBiographiess = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBiographiess)).BeginInit();
+            this.dataHealthandFitness = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHealthandFitness)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -41,11 +41,11 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(77, 41);
+            this.label1.Location = new System.Drawing.Point(175, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(716, 69);
+            this.label1.Size = new System.Drawing.Size(746, 69);
             this.label1.TabIndex = 33;
-            this.label1.Text = "HEALTH and FITNESS";
+            this.label1.Text = "HEALTH  and  FITNESS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnOK
@@ -56,7 +56,7 @@ namespace Login_2
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(273, 535);
+            this.btnOK.Location = new System.Drawing.Point(357, 523);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(369, 39);
@@ -65,34 +65,35 @@ namespace Login_2
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // dataBiographiess
+            // dataHealthandFitness
             // 
-            this.dataBiographiess.BackgroundColor = System.Drawing.Color.White;
-            this.dataBiographiess.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataBiographiess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataBiographiess.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.dataBiographiess.Location = new System.Drawing.Point(46, 145);
-            this.dataBiographiess.Name = "dataBiographiess";
-            this.dataBiographiess.RowHeadersWidth = 51;
-            this.dataBiographiess.RowTemplate.Height = 24;
-            this.dataBiographiess.Size = new System.Drawing.Size(805, 336);
-            this.dataBiographiess.TabIndex = 31;
-            this.dataBiographiess.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBiographiess_CellContentClick);
+            this.dataHealthandFitness.BackgroundColor = System.Drawing.Color.White;
+            this.dataHealthandFitness.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataHealthandFitness.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataHealthandFitness.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.dataHealthandFitness.Location = new System.Drawing.Point(46, 145);
+            this.dataHealthandFitness.Name = "dataHealthandFitness";
+            this.dataHealthandFitness.RowHeadersWidth = 51;
+            this.dataHealthandFitness.RowTemplate.Height = 24;
+            this.dataHealthandFitness.Size = new System.Drawing.Size(1003, 336);
+            this.dataHealthandFitness.TabIndex = 31;
+            this.dataHealthandFitness.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBiographiess_CellContentClick);
             // 
             // Health_and_Fitness
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.dataBiographiess);
+            this.Controls.Add(this.dataHealthandFitness);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Health_and_Fitness";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Health_and_Fitness";
-            ((System.ComponentModel.ISupportInitialize)(this.dataBiographiess)).EndInit();
+            this.Load += new System.EventHandler(this.Health_and_Fitness_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataHealthandFitness)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,6 +103,6 @@ namespace Login_2
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.DataGridView dataBiographiess;
+        private System.Windows.Forms.DataGridView dataHealthandFitness;
     }
 }

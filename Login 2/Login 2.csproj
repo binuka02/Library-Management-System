@@ -238,6 +238,12 @@
     <Compile Include="Sports.Designer.cs">
       <DependentUpon>Sports.cs</DependentUpon>
     </Compile>
+    <Compile Include="Super User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Super User.Designer.cs">
+      <DependentUpon>Super User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update and Delete Book.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sports.resx">
       <DependentUpon>Sports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Super User.resx">
+      <DependentUpon>Super User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update and Delete Book.resx">
       <DependentUpon>Update and Delete Book.cs</DependentUpon>

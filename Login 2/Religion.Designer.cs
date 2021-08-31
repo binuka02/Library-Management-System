@@ -41,7 +41,7 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(279, 26);
+            this.label1.Location = new System.Drawing.Point(383, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(351, 69);
             this.label1.TabIndex = 51;
@@ -55,7 +55,7 @@ namespace Login_2
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(271, 516);
+            this.btnOK.Location = new System.Drawing.Point(376, 509);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(369, 39);
@@ -70,11 +70,11 @@ namespace Login_2
             this.dataReligion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataReligion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataReligion.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.dataReligion.Location = new System.Drawing.Point(46, 128);
+            this.dataReligion.Location = new System.Drawing.Point(36, 128);
             this.dataReligion.Name = "dataReligion";
             this.dataReligion.RowHeadersWidth = 51;
             this.dataReligion.RowTemplate.Height = 24;
-            this.dataReligion.Size = new System.Drawing.Size(805, 336);
+            this.dataReligion.Size = new System.Drawing.Size(1024, 336);
             this.dataReligion.TabIndex = 49;
             this.dataReligion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataBiographiess_CellContentClick);
             // 
@@ -83,7 +83,7 @@ namespace Login_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dataReligion);
@@ -91,6 +91,7 @@ namespace Login_2
             this.Name = "Religion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Religion";
+            this.Load += new System.EventHandler(this.Religion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataReligion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

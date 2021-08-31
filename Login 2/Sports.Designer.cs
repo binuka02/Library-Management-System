@@ -41,7 +41,7 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(315, 31);
+            this.label1.Location = new System.Drawing.Point(425, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(285, 69);
             this.label1.TabIndex = 54;
@@ -55,7 +55,7 @@ namespace Login_2
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(270, 512);
+            this.btnOK.Location = new System.Drawing.Point(378, 519);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(369, 39);
@@ -74,7 +74,7 @@ namespace Login_2
             this.dataSports.Name = "dataSports";
             this.dataSports.RowHeadersWidth = 51;
             this.dataSports.RowTemplate.Height = 24;
-            this.dataSports.Size = new System.Drawing.Size(805, 336);
+            this.dataSports.Size = new System.Drawing.Size(997, 336);
             this.dataSports.TabIndex = 52;
             // 
             // Sports
@@ -82,7 +82,7 @@ namespace Login_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dataSports);
@@ -90,6 +90,7 @@ namespace Login_2
             this.Name = "Sports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sports";
+            this.Load += new System.EventHandler(this.Sports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSports)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
