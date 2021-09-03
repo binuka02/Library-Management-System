@@ -64,5 +64,10 @@ namespace Login_2
             this.Hide();
             new View_Borrower().Show();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
