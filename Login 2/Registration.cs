@@ -24,7 +24,7 @@ namespace Login_2
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            string query = "INSERT INTO book VALUES('" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtUsername.Text + "','" + txtEmail.Text + "','" + txtPassword.Text + "')";
+            string query = "INSERT INTO user VALUES('" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtUsername.Text + "','" + txtEmail.Text + "','" + txtPassword.Text + "')";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
             if (txtFirstName.Text == "" && txtLastName.Text == "")

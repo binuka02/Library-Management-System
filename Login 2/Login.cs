@@ -42,10 +42,40 @@ namespace Login_2
         {
     
             MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            string login = "SELECT * FROM user WHERE Username = '" + txtUsername.Text + "' and Password ='" + txtPassword.Text + "'";
-            MySqlCommand cmd = new MySqlCommand(login,con);
-            MySqlDataAdapter da = new MySqlDataAdapter();
-            MySqlDataReader dr =  cmd.ExecuteReader();
+            //(SELECT COUNT(Column Name/All Columns=*) FROM user WHERE Username ='admin' AND Password='admin') if found output = '1'
+            string query = "SELECT COUNT(*) FROM user WHERE Username = '" + txtUsername.Text + "' and Password ='" + txtPassword.Text + "'";
+            //MySqlCommand cmd = new MySqlCommand(query,con);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(query,con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            //if found output
+                //column index 0
+           /*   +----------+
+                | COUNT(*) |    
+                +----------+
+                |        1 |    row index 0
+                +----------+    */
+           //dt.Rows[row index][column index]
+            if (int.Parse(dt.Rows[0][0].ToString())>=1)
+            {
+                new Dashboard().Show();
+                this.Hide();
+            }
+            else
+            //if not found output
+                //column index 0
+            /*   +----------+
+                 | COUNT(*) |    
+                 +----------+
+                 |        0 |    row index 0
+                 +----------+    */
+            {
+                MessageBox.Show("Invalid Username or Password, Please Try Again", "LOGIN FAILED!");
+                txtUsername.Text = "";
+                txtPassword.Text = "";
+                txtUsername.Focus();
+            }
+            /*MySqlDataReader dr =  cmd.ExecuteReader();
 
             if(dr.Read()==true)
             {
@@ -64,15 +94,15 @@ namespace Login_2
                 {
                     con.Close();
                 }
-            }
+            }*/
 
-            else
+            /*else
             {
                 MessageBox.Show("Invalid Username or Password, Please Try Again", "LOGIN FAILED!");
                 txtUsername.Text = "";
                 txtPassword.Text = "";
                 txtUsername.Focus(); 
-            }
+            }*/
         }
 
         private void button2_Click(object sender, EventArgs e)
