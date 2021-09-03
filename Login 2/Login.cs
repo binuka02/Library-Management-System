@@ -75,34 +75,7 @@ namespace Login_2
                 txtPassword.Text = "";
                 txtUsername.Focus();
             }
-            /*MySqlDataReader dr =  cmd.ExecuteReader();
-
-            if(dr.Read()==true)
-            {
-                try
-                {
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                    new Dashboard().Show();
-                    this.Hide();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                finally
-                {
-                    con.Close();
-                }
-            }*/
-
-            /*else
-            {
-                MessageBox.Show("Invalid Username or Password, Please Try Again", "LOGIN FAILED!");
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-                txtUsername.Focus(); 
-            }*/
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
