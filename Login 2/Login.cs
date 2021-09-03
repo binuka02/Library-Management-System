@@ -40,12 +40,39 @@ namespace Login_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+    
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string login = "SELECT * FROM user WHERE Username = '" + txtUsername.Text + "' and Password ='" + txtPassword.Text + "'";
+            MySqlCommand cmd = new MySqlCommand(login,con);
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            MySqlDataReader dr =  cmd.ExecuteReader();
 
-            new Dashboard().Show();
-                this.Hide();
-            
+            if(dr.Read()==true)
+            {
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    new Dashboard().Show();
+                    this.Hide();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
 
+            else
+            {
+                MessageBox.Show("Invalid Username or Password, Please Try Again", "LOGIN FAILED!");
+                txtUsername.Text = "";
+                txtPassword.Text = "";
+                txtUsername.Focus(); 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
