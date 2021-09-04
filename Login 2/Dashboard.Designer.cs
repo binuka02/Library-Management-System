@@ -71,7 +71,7 @@ namespace Login_2
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Lucida Calligraphy", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(960, 585);
             this.panel1.TabIndex = 0;
@@ -98,7 +98,7 @@ namespace Login_2
             this.lblWelcome.Font = new System.Drawing.Font("Lucida Calligraphy", 40F, System.Drawing.FontStyle.Bold);
             this.lblWelcome.ForeColor = System.Drawing.Color.White;
             this.lblWelcome.Location = new System.Drawing.Point(604, 390);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(275, 70);
             this.lblWelcome.TabIndex = 2;
@@ -158,7 +158,7 @@ namespace Login_2
             this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(960, 206);
             this.panel2.TabIndex = 0;
@@ -196,7 +196,7 @@ namespace Login_2
             this.panelBooks.Controls.Add(this.btnAddBooks);
             this.panelBooks.Controls.Add(this.btnBooks);
             this.panelBooks.Location = new System.Drawing.Point(538, 18);
-            this.panelBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelBooks.Margin = new System.Windows.Forms.Padding(2);
             this.panelBooks.Name = "panelBooks";
             this.panelBooks.Size = new System.Drawing.Size(112, 31);
             this.panelBooks.TabIndex = 7;
@@ -210,7 +210,7 @@ namespace Login_2
             this.btnReturnBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnBooks.ForeColor = System.Drawing.Color.White;
             this.btnReturnBooks.Location = new System.Drawing.Point(0, 119);
-            this.btnReturnBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturnBooks.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturnBooks.Name = "btnReturnBooks";
             this.btnReturnBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnReturnBooks.Size = new System.Drawing.Size(112, 23);
@@ -230,7 +230,7 @@ namespace Login_2
             this.btnIssueBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIssueBooks.ForeColor = System.Drawing.Color.White;
             this.btnIssueBooks.Location = new System.Drawing.Point(0, 93);
-            this.btnIssueBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIssueBooks.Margin = new System.Windows.Forms.Padding(2);
             this.btnIssueBooks.Name = "btnIssueBooks";
             this.btnIssueBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnIssueBooks.Size = new System.Drawing.Size(112, 23);
@@ -250,7 +250,7 @@ namespace Login_2
             this.btnViewBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewBooks.ForeColor = System.Drawing.Color.White;
             this.btnViewBooks.Location = new System.Drawing.Point(0, 64);
-            this.btnViewBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnViewBooks.Margin = new System.Windows.Forms.Padding(2);
             this.btnViewBooks.Name = "btnViewBooks";
             this.btnViewBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnViewBooks.Size = new System.Drawing.Size(112, 23);
@@ -270,7 +270,7 @@ namespace Login_2
             this.btnAddBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddBooks.ForeColor = System.Drawing.Color.White;
             this.btnAddBooks.Location = new System.Drawing.Point(0, 37);
-            this.btnAddBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddBooks.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddBooks.Name = "btnAddBooks";
             this.btnAddBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnAddBooks.Size = new System.Drawing.Size(112, 23);
@@ -292,7 +292,7 @@ namespace Login_2
             this.btnBooks.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
             this.btnBooks.ForeColor = System.Drawing.Color.White;
             this.btnBooks.Location = new System.Drawing.Point(0, 0);
-            this.btnBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBooks.Margin = new System.Windows.Forms.Padding(2);
             this.btnBooks.Name = "btnBooks";
             this.btnBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnBooks.Size = new System.Drawing.Size(112, 32);
@@ -311,7 +311,7 @@ namespace Login_2
             this.panelStudents.Controls.Add(this.btnStudent);
             this.panelStudents.ForeColor = System.Drawing.Color.White;
             this.panelStudents.Location = new System.Drawing.Point(655, 18);
-            this.panelStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelStudents.Margin = new System.Windows.Forms.Padding(2);
             this.panelStudents.Name = "panelStudents";
             this.panelStudents.Size = new System.Drawing.Size(90, 31);
             this.panelStudents.TabIndex = 6;
@@ -325,7 +325,7 @@ namespace Login_2
             this.btnViewStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewStudents.ForeColor = System.Drawing.Color.White;
             this.btnViewStudents.Location = new System.Drawing.Point(-1, 67);
-            this.btnViewStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnViewStudents.Margin = new System.Windows.Forms.Padding(2);
             this.btnViewStudents.Name = "btnViewStudents";
             this.btnViewStudents.Size = new System.Drawing.Size(97, 23);
             this.btnViewStudents.TabIndex = 0;
@@ -344,7 +344,7 @@ namespace Login_2
             this.btnAddStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStudents.ForeColor = System.Drawing.Color.White;
             this.btnAddStudents.Location = new System.Drawing.Point(-1, 37);
-            this.btnAddStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddStudents.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddStudents.Name = "btnAddStudents";
             this.btnAddStudents.Size = new System.Drawing.Size(97, 23);
             this.btnAddStudents.TabIndex = 0;
@@ -364,7 +364,7 @@ namespace Login_2
             this.btnStudent.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
             this.btnStudent.ForeColor = System.Drawing.Color.White;
             this.btnStudent.Location = new System.Drawing.Point(0, 0);
-            this.btnStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStudent.Margin = new System.Windows.Forms.Padding(2);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(90, 32);
             this.btnStudent.TabIndex = 0;
@@ -385,7 +385,7 @@ namespace Login_2
             this.btnCategories.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategories.ForeColor = System.Drawing.Color.White;
             this.btnCategories.Location = new System.Drawing.Point(758, 18);
-            this.btnCategories.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCategories.Margin = new System.Windows.Forms.Padding(2);
             this.btnCategories.Name = "btnCategories";
             this.btnCategories.Size = new System.Drawing.Size(99, 32);
             this.btnCategories.TabIndex = 0;
@@ -405,8 +405,8 @@ namespace Login_2
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(861, 2);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(859, 18);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(90, 49);
             this.button4.TabIndex = 0;
@@ -428,7 +428,7 @@ namespace Login_2
             this.ClientSize = new System.Drawing.Size(960, 585);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
