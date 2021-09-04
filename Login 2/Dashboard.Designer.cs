@@ -51,6 +51,8 @@ namespace Login_2
             this.btnCategories = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelBooks.SuspendLayout();
@@ -60,7 +62,10 @@ namespace Login_2
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -77,13 +82,13 @@ namespace Login_2
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label2.Font = new System.Drawing.Font("Parry Hotter", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label2.Location = new System.Drawing.Point(669, 254);
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.label2.Location = new System.Drawing.Point(709, 337);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(561, 191);
+            this.label2.Size = new System.Drawing.Size(411, 46);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Library System";
+            this.label2.Text = "LIBRARY SYSTEM";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
@@ -103,7 +108,6 @@ namespace Login_2
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.labelDate);
             this.panel2.Controls.Add(this.labelTime);
             this.panel2.Controls.Add(this.panelBooks);
@@ -123,11 +127,11 @@ namespace Login_2
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Parry Hotter", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label5.Location = new System.Drawing.Point(712, 111);
+            this.label5.Font = new System.Drawing.Font("Parry Hotter", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(651, 198);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(467, 143);
+            this.label5.Size = new System.Drawing.Size(547, 167);
             this.label5.TabIndex = 4;
             this.label5.Text = "Hogwarts College";
             // 
@@ -141,6 +145,7 @@ namespace Login_2
             this.labelDate.Size = new System.Drawing.Size(41, 22);
             this.labelDate.TabIndex = 8;
             this.labelDate.Text = "Date";
+            this.labelDate.Click += new System.EventHandler(this.labelDate_Click);
             // 
             // labelTime
             // 
@@ -163,7 +168,7 @@ namespace Login_2
             this.panelBooks.Location = new System.Drawing.Point(717, 22);
             this.panelBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelBooks.Name = "panelBooks";
-            this.panelBooks.Size = new System.Drawing.Size(149, 38);
+            this.panelBooks.Size = new System.Drawing.Size(149, 40);
             this.panelBooks.TabIndex = 7;
             // 
             // btnReturnBooks
@@ -384,7 +389,36 @@ namespace Login_2
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1007, 550);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(258, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "CREATED BY NSBM 20.3 STUDENTS";
+            this.label1.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(695, 433);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(448, 37);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "\" Books turn muggles into wizards...\"";
+            this.label3.Click += new System.EventHandler(this.label2_Click);
             // 
             // Dashboard
             // 
@@ -429,5 +463,7 @@ namespace Login_2
         private System.Windows.Forms.Button btnStudent;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }
