@@ -45,26 +45,78 @@ namespace Login_2
             new Dashboard().Show();
             this.Hide();
         }
-        string date;
+        public bool checkSameBook()
+        {
+            DataTable dt1 = new DataTable();
+            query = "SELECT BookID FROM issuebook WHERE StudentID=" + txtStudentID.Text + "";
+            adapt = new MySqlDataAdapter(query, con);
+            try
+            {
+                adapt.Fill(dt1);
+                //MessageBox.Show(dt1.Rows[0]["BookID"].ToString());
+                if (dt1.Rows[0][0].ToString() == txtBookID.Text)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return false;
+            }
+            
+            
+        }
+
+        string date,query;
+        MySqlConnection con;
+        MySqlDataAdapter adapt;
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             date = DateTime.Now.ToString("dd MMMM yyyy");
-            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            string query = "INSERT INTO issueBook(BookID,StudentID,IssuedDate) VALUES(" + txtBookID.Text + ","+txtStudentID.Text+",'"+date+"')";
+            con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            query = "INSERT INTO issueBook(BookID,StudentID,IssuedDate) VALUES(" + txtBookID.Text + ","+txtStudentID.Text+",'"+date+"')";
             MySqlCommand cmd = new MySqlCommand(query, con);
+            string query1 = "SELECT NoOfBorrowedBooks FROM student WHERE StudentID=" + txtStudentID.Text + "";
+            adapt = new MySqlDataAdapter(query1, con);
+            DataTable dt = new DataTable();
 
             try
             {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Book Issue Successful");
-                query = "UPDATE book SET BookQuantity=BookQuantity-1 WHERE BookID=" + txtBookID.Text + "";
-                cmd = new MySqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                query = "INSERT INTO bookstatus VALUES(" + txtBookID.Text + "," + txtStudentID.Text + ",'" + date + "','Issued')";
-                cmd = new MySqlCommand(query, con);
-                cmd.ExecuteNonQuery();
+                adapt.Fill(dt);
+                if (int.Parse(dt.Rows[0]["NoOfBorrowedBooks"].ToString())== 3 && checkSameBook())
+                {
+                    MessageBox.Show("1. Can't Issue Same Book!\n2. Maximum Books Borrowed!", "Book Issue Failed!");
+                }
+                else if (checkSameBook())
+                {
+                    MessageBox.Show("Can't Issue Same Book!", "Book Issue Failed!");
+                }
+                else if(int.Parse(dt.Rows[0]["NoOfBorrowedBooks"].ToString()) >= 3)
+                {
+                    MessageBox.Show("Maximum Books Borrowed!", "Book Issue Failed!");
+                }
+                else
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Book Issue Successful");
+                    query = "UPDATE book SET BookQuantity=BookQuantity-1 WHERE BookID=" + txtBookID.Text + "";
+                    cmd = new MySqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    query = "INSERT INTO bookstatus VALUES(" + txtBookID.Text + "," + txtStudentID.Text + ",'" + date + "','Issued')";
+                    cmd = new MySqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    query = "UPDATE student SET NoOfBorrowedBooks=NoOfBorrowedBooks+1 WHERE StudentID=" + txtStudentID.Text + "";
+                    cmd = new MySqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                }
+                
 
             }
             catch (Exception ex)

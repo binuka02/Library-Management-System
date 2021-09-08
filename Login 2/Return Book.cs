@@ -116,7 +116,13 @@ namespace Login_2
                 query = "UPDATE book SET BookQuantity=BookQuantity+1 WHERE BookID=" + bookID + "";
                 cmd = new MySqlCommand(query, con);
                 cmd.ExecuteNonQuery();
-                query = "DELETE FROM issuebook WHERE BookID=" + bookID + "";
+                query = "DELETE FROM issuebook WHERE IssueID=" + issueID + "";
+                cmd = new MySqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                query = "UPDATE student SET NoOfBorrowedBooks=NoOfBorrowedBooks-1 WHERE StudentID="+studentID+"" ;
+                cmd = new MySqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                query = "UPDATE student SET NoOfReturnedBooks=NoOfReturnedBooks+1 WHERE StudentID=" + studentID + "";
                 cmd = new MySqlCommand(query, con);
                 cmd.ExecuteNonQuery();
 
