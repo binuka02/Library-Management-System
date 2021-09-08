@@ -114,8 +114,16 @@ namespace Login_2
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            delstudentid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["StudentID"].Value);
-            txtSelectedStudentID.Text = delstudentid.ToString();
+            try
+            {
+                delstudentid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["StudentID"].Value);
+                txtSelectedStudentID.Text = delstudentid.ToString();
+            }
+            catch(Exception ex)
+            {
+
+            }
+            
         }
     }
 }
