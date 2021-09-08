@@ -65,10 +65,16 @@ namespace Login_2
 
         private void lblBack_Click(object sender, EventArgs e)
         {
+            new Dashboard().Show();
             this.Hide();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

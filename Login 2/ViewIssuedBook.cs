@@ -67,5 +67,10 @@ namespace Login_2
             txtStudentID.Text = "";
             txtBookID.Focus();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

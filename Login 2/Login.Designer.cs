@@ -83,13 +83,13 @@ namespace Login_2
             // 
             this.lblExit.AutoSize = true;
             this.lblExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblExit.Location = new System.Drawing.Point(284, 465);
+            this.lblExit.Location = new System.Drawing.Point(306, 458);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(59, 15);
+            this.lblExit.Size = new System.Drawing.Size(37, 16);
             this.lblExit.TabIndex = 4;
-            this.lblExit.Text = "Exit Page";
+            this.lblExit.Text = "Exit ";
             this.lblExit.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // label5
@@ -204,7 +204,7 @@ namespace Login_2
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(510, 510);
+            this.pictureBox1.Size = new System.Drawing.Size(503, 510);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

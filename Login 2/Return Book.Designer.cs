@@ -80,7 +80,7 @@ namespace Login_2
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label2.Location = new System.Drawing.Point(546, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(230, 62);
+            this.label2.Size = new System.Drawing.Size(225, 61);
             this.label2.TabIndex = 0;
             this.label2.Text = "BOOKS";
             // 
@@ -92,7 +92,7 @@ namespace Login_2
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label1.Location = new System.Drawing.Point(239, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 62);
+            this.label1.Size = new System.Drawing.Size(270, 61);
             this.label1.TabIndex = 0;
             this.label1.Text = "RETURN";
             // 
@@ -104,7 +104,7 @@ namespace Login_2
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturn.ForeColor = System.Drawing.Color.White;
-            this.btnReturn.Location = new System.Drawing.Point(322, 608);
+            this.btnReturn.Location = new System.Drawing.Point(334, 609);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(369, 34);
@@ -198,12 +198,14 @@ namespace Login_2
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 269);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataGridView1.Location = new System.Drawing.Point(70, 272);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(922, 258);
+            this.dataGridView1.Size = new System.Drawing.Size(872, 258);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -213,7 +215,7 @@ namespace Login_2
             this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblBack.Location = new System.Drawing.Point(916, 668);
+            this.lblBack.Location = new System.Drawing.Point(899, 659);
             this.lblBack.Name = "lblBack";
             this.lblBack.Size = new System.Drawing.Size(43, 17);
             this.lblBack.TabIndex = 7;

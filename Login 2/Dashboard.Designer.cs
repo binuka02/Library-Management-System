@@ -32,10 +32,12 @@ namespace Login_2
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.panelBooks = new System.Windows.Forms.Panel();
@@ -51,8 +53,6 @@ namespace Login_2
             this.btnCategories = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelBooks.SuspendLayout();
@@ -77,6 +77,34 @@ namespace Login_2
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(978, 678);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(258, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "CREATED BY NSBM 20.3 STUDENTS";
+            this.label1.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(726, 405);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(465, 37);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "\" Books Turn Muggles into Wizards...\"";
+            this.label3.Click += new System.EventHandler(this.label2_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -84,12 +112,24 @@ namespace Login_2
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.label2.Location = new System.Drawing.Point(709, 337);
+            this.label2.Location = new System.Drawing.Point(754, 330);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(411, 46);
+            this.label2.Size = new System.Drawing.Size(403, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "LIBRARY SYSTEM";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Parry Hotter", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(689, 198);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(547, 167);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Hogwarts College";
             // 
             // label4
             // 
@@ -114,7 +154,7 @@ namespace Login_2
             this.panel2.Controls.Add(this.panelStudents);
             this.panel2.Controls.Add(this.btnCategories);
             this.panel2.Controls.Add(this.button4);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -122,18 +162,6 @@ namespace Login_2
             this.panel2.Size = new System.Drawing.Size(1280, 254);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Parry Hotter", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(651, 198);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(547, 167);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Hogwarts College";
             // 
             // labelDate
             // 
@@ -357,7 +385,7 @@ namespace Login_2
             this.btnCategories.Location = new System.Drawing.Point(1011, 22);
             this.btnCategories.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCategories.Name = "btnCategories";
-            this.btnCategories.Size = new System.Drawing.Size(132, 39);
+            this.btnCategories.Size = new System.Drawing.Size(128, 39);
             this.btnCategories.TabIndex = 0;
             this.btnCategories.Text = "CATEGORIES";
             this.btnCategories.UseVisualStyleBackColor = false;
@@ -391,34 +419,6 @@ namespace Login_2
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1007, 550);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "CREATED BY NSBM 20.3 STUDENTS";
-            this.label1.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(695, 433);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(448, 37);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "\" Books turn muggles into wizards...\"";
-            this.label3.Click += new System.EventHandler(this.label2_Click);
             // 
             // Dashboard
             // 

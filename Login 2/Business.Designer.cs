@@ -57,6 +57,7 @@ namespace Login_2
             this.dataBusiness.BackgroundColor = System.Drawing.Color.White;
             this.dataBusiness.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataBusiness.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataBusiness.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataBusiness.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.dataBusiness.Location = new System.Drawing.Point(48, 142);
             this.dataBusiness.Name = "dataBusiness";

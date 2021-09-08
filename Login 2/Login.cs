@@ -127,5 +127,10 @@ namespace Login_2
         {
 
         }
+
+        private void label4_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

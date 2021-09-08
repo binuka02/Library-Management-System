@@ -52,6 +52,7 @@ namespace Login_2
             this.dataBiographies.BackgroundColor = System.Drawing.Color.White;
             this.dataBiographies.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataBiographies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataBiographies.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataBiographies.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.dataBiographies.Location = new System.Drawing.Point(41, 139);
             this.dataBiographies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

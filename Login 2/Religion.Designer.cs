@@ -87,6 +87,7 @@ namespace Login_2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dataReligion);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Religion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

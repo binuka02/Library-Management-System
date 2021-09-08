@@ -69,6 +69,7 @@ namespace Login_2
             this.dataComics.BackgroundColor = System.Drawing.Color.White;
             this.dataComics.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataComics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataComics.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataComics.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.dataComics.Location = new System.Drawing.Point(39, 118);
             this.dataComics.Name = "dataComics";

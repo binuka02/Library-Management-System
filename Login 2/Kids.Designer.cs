@@ -88,6 +88,7 @@ namespace Login_2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dataKids);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Kids";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

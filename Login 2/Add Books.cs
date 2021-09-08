@@ -140,5 +140,10 @@ namespace Login_2
             new Dashboard().Show();
             this.Hide();
         }
+
+        private void Add_Books_Shown(object sender, EventArgs e)
+        {
+            txtBookName.Focus();
+        }
     }
 }

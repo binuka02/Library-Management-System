@@ -117,5 +117,10 @@ namespace Login_2
             new Dashboard().Show();
             this.Hide();
         }
+
+        private void Add_Borrower_Shown(object sender, EventArgs e)
+        {
+            txtStudentName.Focus();
+        }
     }
 }

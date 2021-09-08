@@ -86,6 +86,7 @@ namespace Login_2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dataSports);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

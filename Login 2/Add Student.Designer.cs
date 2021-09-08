@@ -52,11 +52,11 @@ namespace Login_2
             // 
             this.lblBack.AutoSize = true;
             this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblBack.Location = new System.Drawing.Point(680, 520);
+            this.lblBack.Location = new System.Drawing.Point(667, 519);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(30, 13);
+            this.lblBack.Size = new System.Drawing.Size(43, 17);
             this.lblBack.TabIndex = 23;
             this.lblBack.Text = "Back";
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
@@ -258,7 +258,7 @@ namespace Login_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(823, 580);
+            this.ClientSize = new System.Drawing.Size(791, 580);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblBack);
             this.Controls.Add(this.buttonClear);
@@ -278,6 +278,7 @@ namespace Login_2
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Borrower";
             this.Load += new System.EventHandler(this.Add_Borrower_Load);
+            this.Shown += new System.EventHandler(this.Add_Borrower_Shown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -70,6 +70,7 @@ namespace Login_2
             this.dataEntertainment.BackgroundColor = System.Drawing.Color.White;
             this.dataEntertainment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataEntertainment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataEntertainment.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataEntertainment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.dataEntertainment.Location = new System.Drawing.Point(37, 121);
             this.dataEntertainment.Name = "dataEntertainment";

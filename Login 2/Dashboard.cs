@@ -26,6 +26,7 @@ namespace Login_2
         private void btnCatogories_Click(object sender, EventArgs e)
         {
             new Categories().Show();
+            this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -51,7 +52,7 @@ namespace Login_2
         private void button4_Click(object sender, EventArgs e)
         {
             new InventoryReport().Show();
-
+            this.Hide();
         }
 
         private void btnUser_Click(object sender, EventArgs e)
@@ -75,6 +76,11 @@ namespace Login_2
             {
                 panelStudents.Height = 40;
             }
+            else if (panelBooks.Height == 182)
+            {
+                panelBooks.Height = 40;
+                panelStudents.Height = 120;
+            }
             else
             {
                 panelStudents.Height = 120;
@@ -96,6 +102,11 @@ namespace Login_2
             if (panelBooks.Height == 182)
             {
                 panelBooks.Height = 40;
+            }
+            else if (panelStudents.Height == 120)
+            {
+                panelStudents.Height = 40;
+                panelBooks.Height = 182;
             }
             else
             {
