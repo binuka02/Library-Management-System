@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Login_2
 {
@@ -41,8 +42,15 @@ namespace Login_2
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            new Login().Show();
-            this.Hide();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+        }
+        private void openForm()
+        {
+            Application.Run(new Login());
         }
     }
 }

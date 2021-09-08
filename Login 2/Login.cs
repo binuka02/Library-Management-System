@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Threading;
 
 namespace Login_2
 {
@@ -58,8 +59,12 @@ namespace Login_2
            //dt.Rows[row index][column index]
             if (int.Parse(dt.Rows[0][0].ToString())>=1)
             {
-                new Dashboard().Show();
-                this.Hide();
+                this.Close();
+                Thread th = new Thread(openForm);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
+                //new Dashboard().Show();
+                
             }
             else
             //if not found output
@@ -76,6 +81,11 @@ namespace Login_2
                 txtUsername.Focus();
             }
             
+        }
+
+        private void openForm()
+        {
+            Application.Run(new Dashboard());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -99,8 +109,14 @@ namespace Login_2
 
         private void label5_Click(object sender, EventArgs e)
         {
-            new Super_User().Show();
-            this.Hide();
+            this.Close();
+            Thread th = new Thread(openForm1);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void openForm1()
+        {
+            Application.Run(new Super_User());
         }
 
         private void label4_Click_1(object sender, EventArgs e)
