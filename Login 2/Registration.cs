@@ -1,6 +1,7 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Login_2
 {
@@ -96,10 +97,18 @@ namespace Login_2
 
         private void lblAlreadyHave_Click(object sender, EventArgs e)
         {
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
             new Login().Show();
             this.Hide();
         }
 
+        private void openForm()
+        {
+            Application.Run(new Login());
+        }
         private void lblExit_Click(object sender, EventArgs e)
         {
             this.Close();

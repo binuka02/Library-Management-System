@@ -99,6 +99,7 @@ namespace Login_2
             MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
             string query = "INSERT INTO book VALUES(" + txtBookID.Text + ",'" + txtBookName.Text + "','" + txtAuthor.Text + "','" + txtPublication.Text + "','" + txtDate.Text+ "'," + txtBookQuantity.Text + ",'" + txtCategory.Text + "')";
             MySqlCommand cmd = new MySqlCommand(query,con);
+            
 
             try
             {

@@ -34,10 +34,16 @@ namespace Login_2
         {
             if(txtUsername.Text=="admin" && txtPassword.Text=="admin")
             {
-                new Registration().Show();
-                this.Hide();
+                this.Close();
+                Thread th = new Thread(openForm1);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
             }
 
+        }
+        private void openForm1()
+        {
+            Application.Run(new Registration());
         }
 
         private void lblExit_Click(object sender, EventArgs e)
