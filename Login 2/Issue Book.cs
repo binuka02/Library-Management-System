@@ -71,16 +71,50 @@ namespace Login_2
             
             
         }
+        string expiredBookID,expiredBookName;
+        public bool checkBookExpire()
+        {
+            try
+            {
+                DataTable dt2 = new DataTable();
+                query = "select issuebook.BookId, book.BookName, datediff('"+dateNow+"',issuebook.issuedDate) from issuebook inner join book on book.bookid=issuebook.bookid where StudentID=" + txtStudentID.Text + "";
+                adapt = new MySqlDataAdapter(query, con);
+                adapt.Fill(dt2);
+                query = "select NoOfBorrowedBooks from student where StudentID=" + txtStudentID.Text + "";
+                DataTable dt3 = new DataTable();
+                adapt = new MySqlDataAdapter(query, con);
+                adapt.Fill(dt3);
+                int NoOfBorrowedBooks = int.Parse(dt2.Rows[0][0].ToString());
+                for (int i = 0; i < NoOfBorrowedBooks; i++)
+                {
+                    if (int.Parse(dt2.Rows[i][2].ToString()) > 14)
+                    {
+                        expiredBookID = dt2.Rows[i][0].ToString();
+                        expiredBookName= dt2.Rows[i][1].ToString();
+                        return true;
+                    }
+                    else
+                        return false;
+                }
+                return false;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+            
+            
+        }
 
-        string date,query;
+        string dateNow,query;
         MySqlConnection con;
         MySqlDataAdapter adapt;
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            date = DateTime.Now.ToString("yyyy-MM-dd");
+            dateNow = DateTime.Now.ToString("yyyy-MM-dd");
             con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            query = "INSERT INTO issueBook(BookID,StudentID,IssuedDate) VALUES(" + txtBookID.Text + ","+txtStudentID.Text+",'"+date+"')";
+            query = "INSERT INTO issueBook(BookID,StudentID,IssuedDate) VALUES(" + txtBookID.Text + ","+txtStudentID.Text+",'"+dateNow+"')";
             MySqlCommand cmd = new MySqlCommand(query, con);
             string query1 = "SELECT NoOfBorrowedBooks FROM student WHERE StudentID=" + txtStudentID.Text + "";
             adapt = new MySqlDataAdapter(query1, con);
@@ -89,9 +123,9 @@ namespace Login_2
             try
             {
                 adapt.Fill(dt);
-                if (int.Parse(dt.Rows[0]["NoOfBorrowedBooks"].ToString())== 3 && checkSameBook())
+                if (int.Parse(dt.Rows[0]["NoOfBorrowedBooks"].ToString())== 3 && checkSameBook() && checkBookExpire())
                 {
-                    MessageBox.Show("1. Can't Issue Same Book!\n2. Maximum Books Borrowed!", "Book Issue Failed!");
+                    MessageBox.Show("1. Can't Issue Same Book!\n2. Maximum Books Borrowed!\n\t3.A Book has been Expired! Please Return BookID="+expiredBookID+", BookName="+expiredBookName+"", "Book Issue Failed!");
                 }
                 else if (checkSameBook())
                 {
@@ -101,6 +135,10 @@ namespace Login_2
                 {
                     MessageBox.Show("Maximum Books Borrowed!", "Book Issue Failed!");
                 }
+                else if(checkBookExpire())
+                {
+                    MessageBox.Show("A Book has been Expired! Please Return BookID="+expiredBookID+", BookName = "+expiredBookName+"");
+                }
                 else
                 {
                     con.Open();
@@ -109,7 +147,7 @@ namespace Login_2
                     query = "UPDATE book SET BookQuantity=BookQuantity-1 WHERE BookID=" + txtBookID.Text + "";
                     cmd = new MySqlCommand(query, con);
                     cmd.ExecuteNonQuery();
-                    query = "INSERT INTO bookstatus VALUES(" + txtBookID.Text + "," + txtStudentID.Text + ",'" + date + "','Issued')";
+                    query = "INSERT INTO bookstatus VALUES(" + txtBookID.Text + "," + txtStudentID.Text + ",'" + dateNow + "','Issued')";
                     cmd = new MySqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     query = "UPDATE student SET NoOfBorrowedBooks=NoOfBorrowedBooks+1 WHERE StudentID=" + txtStudentID.Text + "";

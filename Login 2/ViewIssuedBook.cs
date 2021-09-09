@@ -23,7 +23,7 @@ namespace Login_2
         {
             try
             {
-                query = "select issuebook.BookID, book.BookName, issuebook.StudentID, student.StudentName from issuebook inner join book on book.BookID = issuebook.BookID inner join student on student.StudentID = issuebook.StudentID;";
+                query = "select issuebook.BookID, book.BookName, issuebook.StudentID, student.StudentName, issuebook.IssuedDate from issuebook inner join book on book.BookID = issuebook.BookID inner join student on student.StudentID = issuebook.StudentID;";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
 
                 DataTable set = new DataTable();

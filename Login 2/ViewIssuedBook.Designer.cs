@@ -50,7 +50,7 @@ namespace Login_2
             this.dataGridView1.Location = new System.Drawing.Point(58, 186);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(559, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(652, 219);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -60,7 +60,7 @@ namespace Login_2
             this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblBack.Location = new System.Drawing.Point(510, 511);
+            this.lblBack.Location = new System.Drawing.Point(540, 516);
             this.lblBack.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBack.Name = "lblBack";
             this.lblBack.Size = new System.Drawing.Size(36, 13);
@@ -74,7 +74,7 @@ namespace Login_2
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(166, 145);
+            this.label3.Location = new System.Drawing.Point(199, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 13);
@@ -87,7 +87,7 @@ namespace Login_2
             this.txtStudentID.BackColor = System.Drawing.Color.White;
             this.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStudentID.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStudentID.Location = new System.Drawing.Point(323, 141);
+            this.txtStudentID.Location = new System.Drawing.Point(356, 139);
             this.txtStudentID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStudentID.Multiline = true;
             this.txtStudentID.Name = "txtStudentID";
@@ -101,7 +101,7 @@ namespace Login_2
             this.txtBookID.BackColor = System.Drawing.Color.White;
             this.txtBookID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBookID.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookID.Location = new System.Drawing.Point(323, 103);
+            this.txtBookID.Location = new System.Drawing.Point(356, 101);
             this.txtBookID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBookID.Multiline = true;
             this.txtBookID.Name = "txtBookID";
@@ -115,7 +115,7 @@ namespace Login_2
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(166, 107);
+            this.label9.Location = new System.Drawing.Point(199, 105);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 13);
@@ -128,7 +128,7 @@ namespace Login_2
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(161, 26);
+            this.label1.Location = new System.Drawing.Point(194, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(352, 46);
@@ -143,7 +143,7 @@ namespace Login_2
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(199, 449);
+            this.button2.Location = new System.Drawing.Point(229, 454);
             this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(277, 32);
@@ -157,7 +157,7 @@ namespace Login_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(672, 552);
+            this.ClientSize = new System.Drawing.Size(771, 552);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
