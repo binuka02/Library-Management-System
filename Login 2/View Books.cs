@@ -13,17 +13,27 @@ namespace Login_2
 {
     public partial class View_Books : Form
     {
-        public View_Books()
+        bool viewBooksInterface;
+        public View_Books(bool viewBooks)
         {
             InitializeComponent();
-            
+            viewBooksInterface = viewBooks;
 
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            new Dashboard().Show();
-            this.Hide();
+            if (viewBooksInterface)
+            {
+                new Dashboard().Show();
+                this.Hide();
+            }
+            else
+            {
+                new Issue_Book().Show();
+                this.Hide();
+            }
+            
         }
 
         private void label9_Click(object sender, EventArgs e)

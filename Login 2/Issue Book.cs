@@ -36,7 +36,8 @@ namespace Login_2
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            new View_Books().Show();
+            new View_Books(false).Show();
+            this.Hide();
             //new SearchBook(int.Parse(txtBookID.Text)).Show();
             
         }
