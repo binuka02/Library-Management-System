@@ -146,5 +146,11 @@ namespace Login_2
         {
             txtBookName.Focus();
         }
+
+        private void Add_Books_Load(object sender, EventArgs e)
+        {
+            txtDate.CustomFormat = "yyyy-MM-dd";
+            txtDate.Format = DateTimePickerFormat.Custom;
+        }
     }
 }
