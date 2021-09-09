@@ -48,13 +48,13 @@ namespace Login_2
         public bool checkSameBook()
         {
             DataTable dt1 = new DataTable();
-            query = "SELECT BookID FROM issuebook WHERE StudentID=" + txtStudentID.Text + "";
+            query = "SELECT COUNT(BookID) FROM issuebook WHERE StudentID=" + txtStudentID.Text + " AND BookID="+txtBookID.Text+"" ;
             adapt = new MySqlDataAdapter(query, con);
             try
             {
                 adapt.Fill(dt1);
                 //MessageBox.Show(dt1.Rows[0]["BookID"].ToString());
-                if (dt1.Rows[0][0].ToString() == txtBookID.Text)
+                if (int.Parse(dt1.Rows[0][0].ToString()) >0)
                 {
                     return true;
                 }
@@ -65,7 +65,7 @@ namespace Login_2
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                
                 return false;
             }
             
@@ -78,7 +78,7 @@ namespace Login_2
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            date = DateTime.Now.ToString("dd MMMM yyyy");
+            date = DateTime.Now.ToString("yyyy-MM-dd");
             con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
             query = "INSERT INTO issueBook(BookID,StudentID,IssuedDate) VALUES(" + txtBookID.Text + ","+txtStudentID.Text+",'"+date+"')";
             MySqlCommand cmd = new MySqlCommand(query, con);
