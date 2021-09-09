@@ -21,13 +21,23 @@ namespace Login_2
         string query;
         private void ViewIssuedBook_Load(object sender, EventArgs e)
         {
-            query = "select issuebook.BookID, book.BookName, issuebook.StudentID, student.StudentName from issuebook inner join book on book.BookID = issuebook.BookID inner join student on student.StudentID = issuebook.StudentID;";
-            MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+            try
+            {
+                query = "select issuebook.BookID, book.BookName, issuebook.StudentID, student.StudentName from issuebook inner join book on book.BookID = issuebook.BookID inner join student on student.StudentID = issuebook.StudentID;";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
 
-            DataTable set = new DataTable();
-            adapter.Fill(set);
-            dataGridView1.DataSource = set;
-            con.Close();
+                DataTable set = new DataTable();
+                adapter.Fill(set);
+                dataGridView1.DataSource = set;
+                dataGridView1.Columns[3].Width = 150;
+                dataGridView1.Columns[1].Width = 150;
+                con.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            
         }
 
         private void lblBack_Click(object sender, EventArgs e)
