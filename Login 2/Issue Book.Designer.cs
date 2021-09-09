@@ -32,6 +32,8 @@ namespace Login_2
             this.txtBookID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtBookQuantity = new System.Windows.Forms.Label();
+            this.txtBookName = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lblBack = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,10 +42,8 @@ namespace Login_2
             this.buttonClear = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtBookName = new System.Windows.Forms.TextBox();
-            this.txtBookQuantity = new System.Windows.Forms.TextBox();
+            this.txtNoOfBorrowedBooks = new System.Windows.Forms.Label();
+            this.txtStudentName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@ namespace Login_2
             this.txtBookID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBookID.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBookID.Location = new System.Drawing.Point(215, 165);
-            this.txtBookID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBookID.Margin = new System.Windows.Forms.Padding(2);
             this.txtBookID.Multiline = true;
             this.txtBookID.Name = "txtBookID";
             this.txtBookID.Size = new System.Drawing.Size(168, 22);
@@ -76,10 +76,10 @@ namespace Login_2
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtNoOfBorrowedBooks);
+            this.panel1.Controls.Add(this.txtStudentName);
             this.panel1.Controls.Add(this.txtBookQuantity);
             this.panel1.Controls.Add(this.txtBookName);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lblBack);
             this.panel1.Controls.Add(this.label3);
@@ -92,10 +92,36 @@ namespace Login_2
             this.panel1.Controls.Add(this.buttonUpdate);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(-2, -6);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(588, 539);
             this.panel1.TabIndex = 35;
+            // 
+            // txtBookQuantity
+            // 
+            this.txtBookQuantity.AutoSize = true;
+            this.txtBookQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.txtBookQuantity.Font = new System.Drawing.Font("Mongolian Baiti", 9F);
+            this.txtBookQuantity.ForeColor = System.Drawing.Color.Black;
+            this.txtBookQuantity.Location = new System.Drawing.Point(385, 176);
+            this.txtBookQuantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtBookQuantity.Name = "txtBookQuantity";
+            this.txtBookQuantity.Size = new System.Drawing.Size(77, 13);
+            this.txtBookQuantity.TabIndex = 14;
+            this.txtBookQuantity.Text = "Book Quantity";
+            // 
+            // txtBookName
+            // 
+            this.txtBookName.AutoSize = true;
+            this.txtBookName.BackColor = System.Drawing.Color.Transparent;
+            this.txtBookName.Font = new System.Drawing.Font("Mongolian Baiti", 9F);
+            this.txtBookName.ForeColor = System.Drawing.Color.Black;
+            this.txtBookName.Location = new System.Drawing.Point(385, 163);
+            this.txtBookName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtBookName.Name = "txtBookName";
+            this.txtBookName.Size = new System.Drawing.Size(64, 13);
+            this.txtBookName.TabIndex = 13;
+            this.txtBookName.Text = "Book Name";
             // 
             // button1
             // 
@@ -105,8 +131,8 @@ namespace Login_2
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(170, 421);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(170, 431);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(277, 28);
             this.button1.TabIndex = 12;
@@ -134,7 +160,7 @@ namespace Login_2
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(271, 210);
+            this.label3.Location = new System.Drawing.Point(269, 217);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 13);
@@ -146,12 +172,13 @@ namespace Login_2
             this.txtStudentID.BackColor = System.Drawing.Color.White;
             this.txtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStudentID.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStudentID.Location = new System.Drawing.Point(215, 225);
-            this.txtStudentID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStudentID.Location = new System.Drawing.Point(215, 232);
+            this.txtStudentID.Margin = new System.Windows.Forms.Padding(2);
             this.txtStudentID.Multiline = true;
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.Size = new System.Drawing.Size(168, 22);
             this.txtStudentID.TabIndex = 9;
+            this.txtStudentID.TextChanged += new System.EventHandler(this.txtStudentID_TextChanged);
             // 
             // buttonSearch
             // 
@@ -161,12 +188,12 @@ namespace Login_2
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.buttonSearch.Location = new System.Drawing.Point(246, 259);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSearch.Location = new System.Drawing.Point(248, 287);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(112, 26);
             this.buttonSearch.TabIndex = 8;
-            this.buttonSearch.Text = "Search Book";
+            this.buttonSearch.Text = "View All Books";
             this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
@@ -177,8 +204,8 @@ namespace Login_2
             this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClear.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.buttonClear.Location = new System.Drawing.Point(170, 363);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClear.Location = new System.Drawing.Point(170, 373);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(277, 28);
             this.buttonClear.TabIndex = 5;
@@ -207,8 +234,8 @@ namespace Login_2
             this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUpdate.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
-            this.buttonUpdate.Location = new System.Drawing.Point(170, 332);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUpdate.Location = new System.Drawing.Point(170, 342);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(277, 28);
             this.buttonUpdate.TabIndex = 6;
@@ -216,58 +243,32 @@ namespace Login_2
             this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
-            // label1
+            // txtNoOfBorrowedBooks
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 7F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(74, 150);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 11);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Book Name";
+            this.txtNoOfBorrowedBooks.AutoSize = true;
+            this.txtNoOfBorrowedBooks.BackColor = System.Drawing.Color.Transparent;
+            this.txtNoOfBorrowedBooks.Font = new System.Drawing.Font("Mongolian Baiti", 9F);
+            this.txtNoOfBorrowedBooks.ForeColor = System.Drawing.Color.Black;
+            this.txtNoOfBorrowedBooks.Location = new System.Drawing.Point(385, 244);
+            this.txtNoOfBorrowedBooks.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtNoOfBorrowedBooks.Name = "txtNoOfBorrowedBooks";
+            this.txtNoOfBorrowedBooks.Size = new System.Drawing.Size(120, 13);
+            this.txtNoOfBorrowedBooks.TabIndex = 16;
+            this.txtNoOfBorrowedBooks.Text = "No of Borrowed Books";
             // 
-            // label4
+            // txtStudentName
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 7F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(452, 150);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 11);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Book Quantity";
-            // 
-            // txtBookName
-            // 
-            this.txtBookName.BackColor = System.Drawing.Color.White;
-            this.txtBookName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBookName.Enabled = false;
-            this.txtBookName.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold);
-            this.txtBookName.Location = new System.Drawing.Point(38, 165);
-            this.txtBookName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBookName.Multiline = true;
-            this.txtBookName.Name = "txtBookName";
-            this.txtBookName.Size = new System.Drawing.Size(135, 22);
-            this.txtBookName.TabIndex = 15;
-            this.txtBookName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtBookQuantity
-            // 
-            this.txtBookQuantity.BackColor = System.Drawing.Color.White;
-            this.txtBookQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBookQuantity.Enabled = false;
-            this.txtBookQuantity.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold);
-            this.txtBookQuantity.Location = new System.Drawing.Point(473, 165);
-            this.txtBookQuantity.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBookQuantity.Multiline = true;
-            this.txtBookQuantity.Name = "txtBookQuantity";
-            this.txtBookQuantity.Size = new System.Drawing.Size(45, 22);
-            this.txtBookQuantity.TabIndex = 16;
+            this.txtStudentName.AutoSize = true;
+            this.txtStudentName.BackColor = System.Drawing.Color.Transparent;
+            this.txtStudentName.Font = new System.Drawing.Font("Mongolian Baiti", 9F);
+            this.txtStudentName.ForeColor = System.Drawing.Color.Black;
+            this.txtStudentName.Location = new System.Drawing.Point(385, 231);
+            this.txtStudentName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtStudentName.Name = "txtStudentName";
+            this.txtStudentName.Size = new System.Drawing.Size(74, 13);
+            this.txtStudentName.TabIndex = 15;
+            this.txtStudentName.Text = "Student Name";
+            this.txtStudentName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Issue_Book
             // 
@@ -276,7 +277,7 @@ namespace Login_2
             this.ClientSize = new System.Drawing.Size(586, 531);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Issue_Book";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Issue_Book";
@@ -299,9 +300,9 @@ namespace Login_2
         private System.Windows.Forms.Label lblBack;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBookQuantity;
-        private System.Windows.Forms.TextBox txtBookName;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtBookQuantity;
+        private System.Windows.Forms.Label txtBookName;
+        private System.Windows.Forms.Label txtNoOfBorrowedBooks;
+        private System.Windows.Forms.Label txtStudentName;
     }
 }
