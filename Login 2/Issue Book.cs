@@ -84,7 +84,7 @@ namespace Login_2
                 DataTable dt3 = new DataTable();
                 adapt = new MySqlDataAdapter(query, con);
                 adapt.Fill(dt3);
-                int NoOfBorrowedBooks = int.Parse(dt2.Rows[0][0].ToString());
+                int NoOfBorrowedBooks = int.Parse(dt3.Rows[0][0].ToString());
                 for (int i = 0; i < NoOfBorrowedBooks; i++)
                 {
                     if (int.Parse(dt2.Rows[i][2].ToString()) > 14)
@@ -109,6 +109,32 @@ namespace Login_2
         string dateNow,query;
         MySqlConnection con;
         MySqlDataAdapter adapt;
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBookID_TextChanged(object sender, EventArgs e)
+        {
+            con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            query = "select BookName,BookQuantity from book where BookID=" + txtBookID.Text + "";
+            try
+            {
+                adapt = new MySqlDataAdapter(query, con);
+                DataTable dt4 = new DataTable();
+                adapt.Fill(dt4);
+                txtBookName.Text = dt4.Rows[0][0].ToString();
+                txtBookQuantity.Text = dt4.Rows[0][1].ToString();
+            }
+            catch(Exception)
+            {
+
+            }
+            
+            
+            
+        }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
