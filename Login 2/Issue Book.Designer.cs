@@ -32,9 +32,13 @@ namespace Login_2
             this.txtBookID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtNoOfBorrowedBooks = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtStudentName = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtBookQuantity = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtBookName = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lblBack = new System.Windows.Forms.Label();
@@ -44,10 +48,6 @@ namespace Login_2
             this.buttonClear = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,6 +104,18 @@ namespace Login_2
             this.panel1.Size = new System.Drawing.Size(861, 724);
             this.panel1.TabIndex = 35;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(263, 389);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(139, 17);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "No of Borrowed Books  :";
+            // 
             // txtNoOfBorrowedBooks
             // 
             this.txtNoOfBorrowedBooks.AutoSize = true;
@@ -112,9 +124,21 @@ namespace Login_2
             this.txtNoOfBorrowedBooks.ForeColor = System.Drawing.Color.Black;
             this.txtNoOfBorrowedBooks.Location = new System.Drawing.Point(499, 389);
             this.txtNoOfBorrowedBooks.Name = "txtNoOfBorrowedBooks";
-            this.txtNoOfBorrowedBooks.Size = new System.Drawing.Size(119, 17);
+            this.txtNoOfBorrowedBooks.Size = new System.Drawing.Size(0, 17);
             this.txtNoOfBorrowedBooks.TabIndex = 16;
-            this.txtNoOfBorrowedBooks.Text = "No of Borrowed Books";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(263, 362);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 17);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Student Name  :";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtStudentName
             // 
@@ -124,10 +148,21 @@ namespace Login_2
             this.txtStudentName.ForeColor = System.Drawing.Color.Black;
             this.txtStudentName.Location = new System.Drawing.Point(499, 362);
             this.txtStudentName.Name = "txtStudentName";
-            this.txtStudentName.Size = new System.Drawing.Size(77, 17);
+            this.txtStudentName.Size = new System.Drawing.Size(0, 17);
             this.txtStudentName.TabIndex = 15;
-            this.txtStudentName.Text = "Student Name";
             this.txtStudentName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(263, 244);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 17);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Book Quantity  :";
             // 
             // txtBookQuantity
             // 
@@ -137,9 +172,20 @@ namespace Login_2
             this.txtBookQuantity.ForeColor = System.Drawing.Color.Black;
             this.txtBookQuantity.Location = new System.Drawing.Point(499, 245);
             this.txtBookQuantity.Name = "txtBookQuantity";
-            this.txtBookQuantity.Size = new System.Drawing.Size(76, 17);
+            this.txtBookQuantity.Size = new System.Drawing.Size(0, 17);
             this.txtBookQuantity.TabIndex = 14;
-            this.txtBookQuantity.Text = "Book Quantity";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(263, 219);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Book Name  :";
             // 
             // txtBookName
             // 
@@ -149,9 +195,8 @@ namespace Login_2
             this.txtBookName.ForeColor = System.Drawing.Color.Black;
             this.txtBookName.Location = new System.Drawing.Point(499, 220);
             this.txtBookName.Name = "txtBookName";
-            this.txtBookName.Size = new System.Drawing.Size(67, 17);
+            this.txtBookName.Size = new System.Drawing.Size(0, 17);
             this.txtBookName.TabIndex = 13;
-            this.txtBookName.Text = "Book Name";
             // 
             // button1
             // 
@@ -269,55 +314,6 @@ namespace Login_2
             this.buttonUpdate.Text = "ISSUE";
             this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(263, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Book Name";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(263, 244);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 17);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Book Quantity";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(263, 362);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 17);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Student Name";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(263, 389);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 17);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "No of Borrowed Books";
             // 
             // Issue_Book
             // 
