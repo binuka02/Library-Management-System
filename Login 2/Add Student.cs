@@ -81,7 +81,7 @@ namespace Login_2
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            string query = "INSERT INTO student VALUES(" + txtStudentID.Text + ",'" + txtStudentName.Text + "'," + txtContactNo.Text + ",'" + txtEmail.Text + "','" + txtNIC.Text + "');";
+            string query = "INSERT INTO student(StudentID,StudentName,ContactNo,Email,NIC) VALUES(" + txtStudentID.Text + ",'" + txtStudentName.Text + "'," + txtContactNo.Text + ",'" + txtEmail.Text + "','" + txtNIC.Text + "');";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
             try
