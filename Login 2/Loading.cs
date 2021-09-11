@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Media;
 
 namespace Login_2
 {
@@ -37,7 +38,8 @@ namespace Login_2
 
         private void Loading_Load(object sender, EventArgs e)
         {
-
+            SoundPlayer soundPlayer = new SoundPlayer(Login_2.Properties.Resources.HarryPotter2);
+            soundPlayer.Play();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
