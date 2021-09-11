@@ -116,16 +116,11 @@ namespace Login_2
 
         private void lblBack_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Thread th = new Thread(openForm);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
+            this.Hide();
+            new Dashboard().Show();
         }
 
-        private void openForm()
-        {
-            Application.Run(new Dashboard());
-        }
+        
 
         private void Add_Borrower_Shown(object sender, EventArgs e)
         {

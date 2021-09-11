@@ -47,15 +47,10 @@ namespace Login_2
 
         private void lblBack_Click_1(object sender, EventArgs e)
         {
-            this.Close();
-            Thread th = new Thread(openForm);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
+            this.Hide();
+            new Dashboard().Show();
         }
-        private void openForm()
-        {
-            Application.Run(new Dashboard());
-        }
+        
 
         public bool checkSameBook()
         {

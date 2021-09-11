@@ -290,7 +290,8 @@ namespace Login_2
 
         private void label4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+            
         }
 
         private void labelDate_Click(object sender, EventArgs e)
