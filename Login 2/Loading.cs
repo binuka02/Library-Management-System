@@ -14,22 +14,11 @@ namespace Login_2
 {
     public partial class Loading : Form
     {
-        [DllImport("Gdi32.dll",EntryPoint ="CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-            int nLeftRect,
-            int nTopRect,
-            int Rightrect,
-            int nBottomRect,
-            int nWidthEllipse,
-            int nHeightEllipse
-            );
+        
         public Loading()
         {
-            InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width,Height, 25, 25));
+            InitializeComponent();        
             ProgressBar1.Value = 0;
-            this.Icon = Properties.Resources.hicon;
         }
 
         private void guna2CircleProgressBar1_ValueChanged(object sender, EventArgs e)
@@ -47,12 +36,10 @@ namespace Login_2
         {
             ProgressBar1.Value += 1;
             
-
             if(ProgressBar1.Value==100)
             {
                 timer1.Enabled = false;
-                Login loginobj = new Login();
-                loginobj.Show();
+                new Login().Show();
                 this.Hide();
             }
         }
