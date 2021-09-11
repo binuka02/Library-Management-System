@@ -17,6 +17,7 @@ namespace Login_2
         {
             InitializeComponent();
             bookID = bookIDValue;
+            this.Icon = Properties.Resources.hicon;
         }
         int bookID;
         string query;

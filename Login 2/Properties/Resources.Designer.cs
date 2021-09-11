@@ -68,5 +68,15 @@ namespace Login_2.Properties {
                 return ResourceManager.GetStream("HarryPotter2", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon hicon {
+            get {
+                object obj = ResourceManager.GetObject("hicon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }

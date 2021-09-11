@@ -16,6 +16,7 @@ namespace Login_2
         public Dashboard()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -17,6 +17,7 @@ namespace Login_2
         public Add_Borrower()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

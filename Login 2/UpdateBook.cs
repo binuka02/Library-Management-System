@@ -18,7 +18,8 @@ namespace Login_2
         {
             InitializeComponent();
             bookID = bookIDValue;
-            
+            this.Icon = Properties.Resources.hicon;
+
         }
 
         MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");

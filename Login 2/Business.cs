@@ -17,6 +17,7 @@ namespace Login_2
         public Business()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void dataBiographiess_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -10,6 +10,7 @@ namespace Login_2
         public Registration()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

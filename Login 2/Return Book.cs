@@ -17,6 +17,7 @@ namespace Login_2
         public Return_Book()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
         MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
         string query;

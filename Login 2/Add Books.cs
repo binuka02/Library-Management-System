@@ -18,6 +18,7 @@ namespace Login_2
         public Add_Books()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void label1_Click(object sender, EventArgs e)

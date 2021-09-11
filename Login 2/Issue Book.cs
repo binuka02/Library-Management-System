@@ -18,6 +18,7 @@ namespace Login_2
         public Issue_Book()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void Issue_Book_Load(object sender, EventArgs e)

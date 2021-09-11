@@ -16,6 +16,7 @@ namespace Login_2
         public Categories()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void button21_Click(object sender, EventArgs e)

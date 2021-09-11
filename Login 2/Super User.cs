@@ -16,6 +16,7 @@ namespace Login_2
         public Super_User()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void checkBoxShowPassword_CheckedChanged(object sender, EventArgs e)

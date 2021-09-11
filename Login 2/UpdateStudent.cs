@@ -18,6 +18,7 @@ namespace Login_2
         {
             InitializeComponent();
             studentID = studentIDValue;
+            this.Icon = Properties.Resources.hicon;
 
         }
         MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");

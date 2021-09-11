@@ -19,6 +19,7 @@ namespace Login_2
         {
             InitializeComponent();
             viewBooksInterface = viewBooks;
+            this.Icon = Properties.Resources.hicon;
 
         }
 

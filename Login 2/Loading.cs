@@ -29,6 +29,7 @@ namespace Login_2
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width,Height, 25, 25));
             ProgressBar1.Value = 0;
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void guna2CircleProgressBar1_ValueChanged(object sender, EventArgs e)

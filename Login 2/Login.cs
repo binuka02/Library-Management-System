@@ -17,6 +17,7 @@ namespace Login_2
         public Login()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void label2_Click(object sender, EventArgs e)

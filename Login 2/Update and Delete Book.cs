@@ -15,6 +15,7 @@ namespace Login_2
         public Update_and_Delete_Book()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void label11_Click(object sender, EventArgs e)

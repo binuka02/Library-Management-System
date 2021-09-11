@@ -17,6 +17,7 @@ namespace Login_2
         public Romance()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
         private void btnOK_Click(object sender, EventArgs e)

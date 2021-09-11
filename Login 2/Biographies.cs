@@ -17,6 +17,7 @@ namespace Login_2
         public Biographies()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
 
 

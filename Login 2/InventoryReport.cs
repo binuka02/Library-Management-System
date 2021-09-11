@@ -17,6 +17,7 @@ namespace Login_2
         public InventoryReport()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
         }
         string query;
         MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
