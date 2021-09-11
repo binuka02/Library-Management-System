@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace Login_2
 {
@@ -117,44 +118,107 @@ namespace Login_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Add_Books().Show();
-            this.Hide();
+            //new Add_Books().Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+            void openForm()
+            {
+                Application.Run(new Add_Books());
+            }
+            //this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new View_Books(true).Show();
-            this.Hide();
+            //new View_Books(true).Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+            void openForm()
+            {
+                Application.Run(new View_Books(true));
+            }
+            //this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            new Issue_Book().Show();
-            this.Hide();
+            //new Issue_Book().Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+            void openForm()
+            {
+                Application.Run(new Issue_Book());
+            }
+            //this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            new Return_Book().Show();
-            this.Hide();
+            //new Return_Book().Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+            void openForm()
+            {
+                Application.Run(new Return_Book());
+            }
+            //this.Hide();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            new Update_and_Delete_Book().Show();
-            this.Hide();
+            //new Update_and_Delete_Book().Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+            void openForm()
+            {
+                Application.Run(new Update_and_Delete_Book());
+            }
+            //this.Hide();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            new View_Borrower().Show();
-            this.Hide();
+            //new View_Borrower().Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+            void openForm()
+            {
+                Application.Run(new View_Borrower());
+            }
+            //this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            new Add_Borrower().Show();
-            this.Hide();
+            //new Add_Borrower().Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+            void openForm()
+            {
+                Application.Run(new Add_Borrower());
+            }
+            //this.Hide();
         }
 
         private void btnCategories_MouseHover(object sender, EventArgs e)

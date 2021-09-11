@@ -140,8 +140,15 @@ namespace Login_2
 
         private void lblBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Dashboard().Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+
+            void openForm()
+            {
+                Application.Run(new Dashboard());
+            }
         }
 
         private void Add_Books_Shown(object sender, EventArgs e)
