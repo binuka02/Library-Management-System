@@ -53,15 +53,20 @@ namespace Login_2
             this.btnCategories = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelBooks.SuspendLayout();
             this.panelStudents.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -71,9 +76,9 @@ namespace Login_2
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Lucida Calligraphy", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 720);
+            this.panel1.Size = new System.Drawing.Size(960, 585);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -84,9 +89,10 @@ namespace Login_2
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(979, 678);
+            this.label1.Location = new System.Drawing.Point(734, 551);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 19);
+            this.label1.Size = new System.Drawing.Size(209, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "CREATED BY NSBM 20.3 STUDENTS";
             this.label1.Click += new System.EventHandler(this.label2_Click);
@@ -98,9 +104,10 @@ namespace Login_2
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(725, 405);
+            this.label3.Location = new System.Drawing.Point(544, 329);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(465, 37);
+            this.label3.Size = new System.Drawing.Size(375, 28);
             this.label3.TabIndex = 1;
             this.label3.Text = "\" Books Turn Muggles into Wizards...\"";
             this.label3.Click += new System.EventHandler(this.label2_Click);
@@ -112,9 +119,10 @@ namespace Login_2
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.label2.Location = new System.Drawing.Point(755, 330);
+            this.label2.Location = new System.Drawing.Point(566, 268);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(403, 45);
+            this.label2.Size = new System.Drawing.Size(328, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "LIBRARY SYSTEM";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -125,9 +133,10 @@ namespace Login_2
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Parry Hotter", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(689, 198);
+            this.label5.Location = new System.Drawing.Point(517, 161);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(547, 167);
+            this.label5.Size = new System.Drawing.Size(435, 133);
             this.label5.TabIndex = 4;
             this.label5.Text = "Hogwarts College";
             // 
@@ -138,9 +147,10 @@ namespace Login_2
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(26, 675);
+            this.label4.Location = new System.Drawing.Point(20, 548);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 22);
+            this.label4.Size = new System.Drawing.Size(36, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "EXIT ";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -148,6 +158,7 @@ namespace Login_2
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.labelDate);
             this.panel2.Controls.Add(this.labelTime);
             this.panel2.Controls.Add(this.panelBooks);
@@ -157,9 +168,9 @@ namespace Login_2
             this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1280, 254);
+            this.panel2.Size = new System.Drawing.Size(960, 206);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -168,9 +179,10 @@ namespace Login_2
             this.labelDate.AutoSize = true;
             this.labelDate.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDate.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.labelDate.Location = new System.Drawing.Point(3, 30);
+            this.labelDate.Location = new System.Drawing.Point(2, 24);
+            this.labelDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(41, 22);
+            this.labelDate.Size = new System.Drawing.Size(32, 17);
             this.labelDate.TabIndex = 8;
             this.labelDate.Text = "Date";
             this.labelDate.Click += new System.EventHandler(this.labelDate_Click);
@@ -180,9 +192,10 @@ namespace Login_2
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.labelTime.Location = new System.Drawing.Point(3, 9);
+            this.labelTime.Location = new System.Drawing.Point(2, 7);
+            this.labelTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(43, 22);
+            this.labelTime.Size = new System.Drawing.Size(33, 17);
             this.labelTime.TabIndex = 8;
             this.labelTime.Text = "Time";
             // 
@@ -193,10 +206,10 @@ namespace Login_2
             this.panelBooks.Controls.Add(this.btnViewBooks);
             this.panelBooks.Controls.Add(this.btnAddBooks);
             this.panelBooks.Controls.Add(this.btnBooks);
-            this.panelBooks.Location = new System.Drawing.Point(717, 22);
-            this.panelBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelBooks.Location = new System.Drawing.Point(538, 18);
+            this.panelBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBooks.Name = "panelBooks";
-            this.panelBooks.Size = new System.Drawing.Size(149, 39);
+            this.panelBooks.Size = new System.Drawing.Size(112, 32);
             this.panelBooks.TabIndex = 7;
             // 
             // btnReturnBooks
@@ -207,11 +220,11 @@ namespace Login_2
             this.btnReturnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturnBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnBooks.ForeColor = System.Drawing.Color.White;
-            this.btnReturnBooks.Location = new System.Drawing.Point(0, 146);
-            this.btnReturnBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReturnBooks.Location = new System.Drawing.Point(0, 119);
+            this.btnReturnBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReturnBooks.Name = "btnReturnBooks";
             this.btnReturnBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnReturnBooks.Size = new System.Drawing.Size(149, 28);
+            this.btnReturnBooks.Size = new System.Drawing.Size(112, 23);
             this.btnReturnBooks.TabIndex = 0;
             this.btnReturnBooks.Text = "RETURN BOOKS";
             this.btnReturnBooks.UseVisualStyleBackColor = false;
@@ -227,11 +240,11 @@ namespace Login_2
             this.btnIssueBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIssueBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIssueBooks.ForeColor = System.Drawing.Color.White;
-            this.btnIssueBooks.Location = new System.Drawing.Point(0, 114);
-            this.btnIssueBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIssueBooks.Location = new System.Drawing.Point(0, 93);
+            this.btnIssueBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIssueBooks.Name = "btnIssueBooks";
             this.btnIssueBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnIssueBooks.Size = new System.Drawing.Size(149, 28);
+            this.btnIssueBooks.Size = new System.Drawing.Size(112, 23);
             this.btnIssueBooks.TabIndex = 0;
             this.btnIssueBooks.Text = "ISSUE BOOKS";
             this.btnIssueBooks.UseVisualStyleBackColor = false;
@@ -247,11 +260,11 @@ namespace Login_2
             this.btnViewBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewBooks.ForeColor = System.Drawing.Color.White;
-            this.btnViewBooks.Location = new System.Drawing.Point(0, 79);
-            this.btnViewBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewBooks.Location = new System.Drawing.Point(0, 64);
+            this.btnViewBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnViewBooks.Name = "btnViewBooks";
             this.btnViewBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnViewBooks.Size = new System.Drawing.Size(149, 28);
+            this.btnViewBooks.Size = new System.Drawing.Size(112, 23);
             this.btnViewBooks.TabIndex = 0;
             this.btnViewBooks.Text = "VIEW BOOKS";
             this.btnViewBooks.UseVisualStyleBackColor = false;
@@ -267,11 +280,11 @@ namespace Login_2
             this.btnAddBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddBooks.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddBooks.ForeColor = System.Drawing.Color.White;
-            this.btnAddBooks.Location = new System.Drawing.Point(0, 46);
-            this.btnAddBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddBooks.Location = new System.Drawing.Point(0, 37);
+            this.btnAddBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddBooks.Name = "btnAddBooks";
             this.btnAddBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnAddBooks.Size = new System.Drawing.Size(149, 28);
+            this.btnAddBooks.Size = new System.Drawing.Size(112, 23);
             this.btnAddBooks.TabIndex = 0;
             this.btnAddBooks.Text = "ADD BOOKS";
             this.btnAddBooks.UseVisualStyleBackColor = false;
@@ -290,10 +303,10 @@ namespace Login_2
             this.btnBooks.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
             this.btnBooks.ForeColor = System.Drawing.Color.White;
             this.btnBooks.Location = new System.Drawing.Point(0, 0);
-            this.btnBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBooks.Name = "btnBooks";
             this.btnBooks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnBooks.Size = new System.Drawing.Size(149, 39);
+            this.btnBooks.Size = new System.Drawing.Size(112, 32);
             this.btnBooks.TabIndex = 0;
             this.btnBooks.Text = "BOOKS";
             this.btnBooks.UseVisualStyleBackColor = false;
@@ -308,10 +321,10 @@ namespace Login_2
             this.panelStudents.Controls.Add(this.btnAddStudents);
             this.panelStudents.Controls.Add(this.btnStudent);
             this.panelStudents.ForeColor = System.Drawing.Color.White;
-            this.panelStudents.Location = new System.Drawing.Point(873, 22);
-            this.panelStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelStudents.Location = new System.Drawing.Point(655, 18);
+            this.panelStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelStudents.Name = "panelStudents";
-            this.panelStudents.Size = new System.Drawing.Size(120, 38);
+            this.panelStudents.Size = new System.Drawing.Size(90, 31);
             this.panelStudents.TabIndex = 6;
             // 
             // btnViewStudents
@@ -322,10 +335,10 @@ namespace Login_2
             this.btnViewStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewStudents.ForeColor = System.Drawing.Color.White;
-            this.btnViewStudents.Location = new System.Drawing.Point(-1, 82);
-            this.btnViewStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewStudents.Location = new System.Drawing.Point(-1, 67);
+            this.btnViewStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnViewStudents.Name = "btnViewStudents";
-            this.btnViewStudents.Size = new System.Drawing.Size(129, 28);
+            this.btnViewStudents.Size = new System.Drawing.Size(97, 23);
             this.btnViewStudents.TabIndex = 0;
             this.btnViewStudents.Text = "VIEW STUDENTS";
             this.btnViewStudents.UseVisualStyleBackColor = false;
@@ -341,10 +354,10 @@ namespace Login_2
             this.btnAddStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddStudents.Font = new System.Drawing.Font("Britannic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStudents.ForeColor = System.Drawing.Color.White;
-            this.btnAddStudents.Location = new System.Drawing.Point(-1, 46);
-            this.btnAddStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddStudents.Location = new System.Drawing.Point(-1, 37);
+            this.btnAddStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddStudents.Name = "btnAddStudents";
-            this.btnAddStudents.Size = new System.Drawing.Size(129, 28);
+            this.btnAddStudents.Size = new System.Drawing.Size(97, 23);
             this.btnAddStudents.TabIndex = 0;
             this.btnAddStudents.Text = "ADD STUDENTS";
             this.btnAddStudents.UseVisualStyleBackColor = false;
@@ -362,9 +375,9 @@ namespace Login_2
             this.btnStudent.Font = new System.Drawing.Font("Britannic Bold", 10.2F);
             this.btnStudent.ForeColor = System.Drawing.Color.White;
             this.btnStudent.Location = new System.Drawing.Point(0, 0);
-            this.btnStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStudent.Name = "btnStudent";
-            this.btnStudent.Size = new System.Drawing.Size(120, 39);
+            this.btnStudent.Size = new System.Drawing.Size(90, 32);
             this.btnStudent.TabIndex = 0;
             this.btnStudent.Text = "STUDENTS";
             this.btnStudent.UseVisualStyleBackColor = false;
@@ -382,10 +395,10 @@ namespace Login_2
             this.btnCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategories.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategories.ForeColor = System.Drawing.Color.White;
-            this.btnCategories.Location = new System.Drawing.Point(1011, 22);
-            this.btnCategories.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCategories.Location = new System.Drawing.Point(758, 18);
+            this.btnCategories.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCategories.Name = "btnCategories";
-            this.btnCategories.Size = new System.Drawing.Size(128, 39);
+            this.btnCategories.Size = new System.Drawing.Size(96, 32);
             this.btnCategories.TabIndex = 0;
             this.btnCategories.Text = "CATEGORIES";
             this.btnCategories.UseVisualStyleBackColor = false;
@@ -403,10 +416,10 @@ namespace Login_2
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1145, 22);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(859, 18);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 60);
+            this.button4.Size = new System.Drawing.Size(90, 49);
             this.button4.TabIndex = 0;
             this.button4.Text = "INVENTORY REPORTS";
             this.button4.UseVisualStyleBackColor = false;
@@ -420,14 +433,35 @@ namespace Login_2
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(191, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(279, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(601, 375);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(265, 156);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(960, 585);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
@@ -437,6 +471,8 @@ namespace Login_2
             this.panel2.PerformLayout();
             this.panelBooks.ResumeLayout(false);
             this.panelStudents.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -465,5 +501,7 @@ namespace Login_2
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
