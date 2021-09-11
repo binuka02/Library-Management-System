@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Threading;
 
 namespace Login_2
 {
@@ -23,17 +24,15 @@ namespace Login_2
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            if (viewBooksInterface)
-            {
-                new Dashboard().Show();
-                this.Hide();
-            }
-            else
-            {
-                new Issue_Book().Show();
-                this.Hide();
-            }
-            
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void openForm()
+        {
+            Application.Run(new Dashboard());
         }
 
         private void label9_Click(object sender, EventArgs e)

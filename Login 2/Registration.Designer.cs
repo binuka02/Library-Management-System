@@ -96,13 +96,13 @@ namespace Login_2
             // 
             this.lblExit.AutoSize = true;
             this.lblExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblExit.Location = new System.Drawing.Point(278, 609);
+            this.lblExit.Location = new System.Drawing.Point(306, 612);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(65, 16);
+            this.lblExit.Size = new System.Drawing.Size(37, 16);
             this.lblExit.TabIndex = 4;
-            this.lblExit.Text = "Exit Page";
+            this.lblExit.Text = "Exit ";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
             // 
             // lblAlreadyHave

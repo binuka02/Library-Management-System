@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Threading;
 
 namespace Login_2
 {
@@ -20,8 +21,15 @@ namespace Login_2
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Categories().Show();
+            this.Close();
+            Thread th = new Thread(openForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void openForm()
+        {
+            Application.Run(new Categories());
         }
 
         private void Home_and_Garden_Load(object sender, EventArgs e)

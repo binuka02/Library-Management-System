@@ -85,7 +85,7 @@ namespace Login_2
             this.lblExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.lblExit.Location = new System.Drawing.Point(306, 458);
+            this.lblExit.Location = new System.Drawing.Point(306, 455);
             this.lblExit.Name = "lblExit";
             this.lblExit.Size = new System.Drawing.Size(37, 16);
             this.lblExit.TabIndex = 4;

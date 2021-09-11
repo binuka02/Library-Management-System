@@ -101,8 +101,6 @@ namespace Login_2
             Thread th = new Thread(openForm);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
-            new Login().Show();
-            this.Hide();
         }
 
         private void openForm()
