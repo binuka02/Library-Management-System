@@ -161,10 +161,10 @@ namespace Login_2
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button1.Location = new System.Drawing.Point(338, 485);
+            this.button1.Location = new System.Drawing.Point(306, 485);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 32);
+            this.button1.Size = new System.Drawing.Size(223, 32);
             this.button1.TabIndex = 12;
             this.button1.Text = "View Issued Books";
             this.button1.UseVisualStyleBackColor = false;
@@ -216,10 +216,10 @@ namespace Login_2
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.buttonSearch.Location = new System.Drawing.Point(338, 449);
+            this.buttonSearch.Location = new System.Drawing.Point(306, 449);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(149, 32);
+            this.buttonSearch.Size = new System.Drawing.Size(223, 32);
             this.buttonSearch.TabIndex = 8;
             this.buttonSearch.Text = "View All Books";
             this.buttonSearch.UseVisualStyleBackColor = false;
