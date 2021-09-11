@@ -127,7 +127,7 @@ namespace Login_2
                 DataTable dt4 = new DataTable();
                 adapt.Fill(dt4);
                 txtBookName.Text = dt4.Rows[0][0].ToString();
-                txtBookQuantity.Text = "Quantity = "+dt4.Rows[0][1].ToString();
+                txtBookQuantity.Text = dt4.Rows[0][1].ToString();
                 found = true;
             }
             catch(Exception)
@@ -149,7 +149,7 @@ namespace Login_2
                 DataTable dt4 = new DataTable();
                 adapt.Fill(dt4);
                 txtStudentName.Text = dt4.Rows[0][0].ToString();
-                txtNoOfBorrowedBooks.Text = "No of Borrowed Books = " + dt4.Rows[0][1].ToString();
+                txtNoOfBorrowedBooks.Text = dt4.Rows[0][1].ToString();
                 found = true;
             }
             catch (Exception)
