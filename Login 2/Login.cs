@@ -122,7 +122,7 @@ namespace Login_2
 
         private void label4_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void label1_Click(object sender, EventArgs e)
