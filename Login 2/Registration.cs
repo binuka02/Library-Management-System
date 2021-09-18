@@ -68,14 +68,6 @@ namespace Login_2
             {
                 con.Close();
             }
-
-            
-            
-            
-
-            
-
-
             
         }
 
