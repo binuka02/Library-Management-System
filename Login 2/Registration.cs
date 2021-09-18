@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using System.Threading;
+using System.Data;
 
 namespace Login_2
 {
@@ -29,17 +30,16 @@ namespace Login_2
             string query = "INSERT INTO user VALUES('" + txtFirstName.Text + "','" + txtLastName.Text + "','" + txtUsername.Text + "','" + txtEmail.Text + "','" + txtPassword.Text + "')";
             MySqlCommand cmd = new MySqlCommand(query, con);
 
-            if (txtFirstName.Text == "" && txtLastName.Text == "")
+            
+
+
+            if (txtFirstName.Text == "" || txtLastName.Text == "" || txtUsername.Text == "")
             {
-                MessageBox.Show("First Name and Last Name fields are empty!");
+                MessageBox.Show("Fields are Empty!");
             }
-            else if (txtUsername.Text == "")
+            else if (txtPassword.Text == "" || txtConfirmPassword.Text == "")
             {
-                MessageBox.Show("Username field is empty!");
-            }
-            else if (txtPassword.Text == "" && txtConfirmPassword.Text == "")
-            {
-                MessageBox.Show("Password fiels are empty!");
+                MessageBox.Show("Password Fields are empty!");
             }
             else if (txtPassword.Text == txtConfirmPassword.Text)
             {
@@ -68,6 +68,18 @@ namespace Login_2
                 txtPassword.Focus();
             }
 
+            string reg = "SELECT COUNT(*) FROM user WHERE Username = '" + txtUsername.Text + "'";
+            MySqlDataAdapter adapter = new MySqlDataAdapter(reg, con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+
+            if (int.Parse(dt.Rows[0][0].ToString()) >= 1)
+            {
+                MessageBox.Show("This Username is Already Registered!", "REGISTRATION FAILED!");
+                txtUsername.Text = "";
+                txtUsername.Focus();
+            }
         }
 
         private void buttonClear_Click(object sender, EventArgs e)

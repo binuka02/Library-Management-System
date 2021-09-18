@@ -64,7 +64,6 @@ namespace Login_2
                 Thread th = new Thread(openForm);
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
-                //new Dashboard().Show();
                 
             }
             else
