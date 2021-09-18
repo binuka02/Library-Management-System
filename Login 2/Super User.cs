@@ -40,6 +40,13 @@ namespace Login_2
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
             }
+            else 
+            {
+                MessageBox.Show("Invalid Username or Password","SUPER USER LOGIN FAILED!");
+                txtUsername.Text = "";
+                txtPassword.Text = "";
+                txtUsername.Focus();
+            }
 
         }
         private void openForm1()

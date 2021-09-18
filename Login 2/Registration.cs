@@ -57,7 +57,8 @@ namespace Login_2
                     con.Open();
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("You Have Registered Successfully", "REGISTRATION SUCCESS!");
-
+                    new Login().Show();
+                    this.Hide();
                 }    
             }            
             catch(Exception ex)
