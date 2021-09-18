@@ -121,7 +121,7 @@ namespace Login_2
         {
 
         }
-        bool found;
+        bool foundStudentID, foundBookID;
         private void txtBookID_TextChanged(object sender, EventArgs e)
         {
             con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
@@ -133,13 +133,13 @@ namespace Login_2
                 adapt.Fill(dt4);
                 txtBookName.Text = dt4.Rows[0][0].ToString();
                 txtBookQuantity.Text = dt4.Rows[0][1].ToString();
-                found = true;
+                foundBookID = true;
             }
             catch(Exception)
             {
                 txtBookName.Text = "";
                 txtBookQuantity.Text = "";
-                found = false;
+                foundBookID = false;
             }
             
             
@@ -157,19 +157,19 @@ namespace Login_2
                 adapt.Fill(dt4);
                 txtStudentName.Text = dt4.Rows[0][0].ToString();
                 txtNoOfBorrowedBooks.Text = dt4.Rows[0][1].ToString();
-                found = true;
+                foundStudentID = true;
             }
             catch (Exception)
             {
                 txtStudentName.Text = "";
                 txtNoOfBorrowedBooks.Text = "";
-                found = false;
+                foundStudentID = false;
             }
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            if (found)
+            if (foundStudentID && foundBookID)
             {
                 dateNow = DateTime.Now.ToString("yyyy-MM-dd");
                 con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
@@ -218,15 +218,19 @@ namespace Login_2
 
 
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Entered Details Incorrect");
+                    MessageBox.Show(ex.ToString());
                 }
 
                 finally
                 {
                     con.Close();
                 }
+            }
+            else if (txtBookID.Text=="" || txtStudentID.Text=="")
+            {
+                MessageBox.Show("Fields Are Empty");
             }
             else
             {
