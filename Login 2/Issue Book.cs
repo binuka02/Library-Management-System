@@ -137,6 +137,8 @@ namespace Login_2
             }
             catch(Exception)
             {
+                txtBookName.Text = "";
+                txtBookQuantity.Text = "";
                 found = false;
             }
             
@@ -159,6 +161,8 @@ namespace Login_2
             }
             catch (Exception)
             {
+                txtStudentName.Text = "";
+                txtNoOfBorrowedBooks.Text = "";
                 found = false;
             }
         }
@@ -208,6 +212,8 @@ namespace Login_2
                         query = "UPDATE student SET NoOfBorrowedBooks=NoOfBorrowedBooks+1 WHERE StudentID=" + txtStudentID.Text + "";
                         cmd = new MySqlCommand(query, con);
                         cmd.ExecuteNonQuery();
+                        txtBookID.Text = "";
+                        txtStudentID.Text = "";
                     }
 
 
