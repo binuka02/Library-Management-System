@@ -49,37 +49,45 @@ namespace Login_2
             //MySqlCommand cmd = new MySqlCommand(query,con);
             MySqlDataAdapter adapter = new MySqlDataAdapter(query,con);
             DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            //if found output
-                //column index 0
-           /*   +----------+
-                | COUNT(*) |    
-                +----------+
-                |        1 |    row index 0
-                +----------+    */
-           //dt.Rows[row index][column index]
-            if (int.Parse(dt.Rows[0][0].ToString())>=1)
+            try
             {
-                this.Close();
-                Thread th = new Thread(openForm);
-                th.SetApartmentState(ApartmentState.STA);
-                th.Start();
-                
-            }
-            else
-            //if not found output
+                adapter.Fill(dt);
+                //if found output
                 //column index 0
-            /*   +----------+
-                 | COUNT(*) |    
-                 +----------+
-                 |        0 |    row index 0
-                 +----------+    */
-            {
-                MessageBox.Show("Invalid Username or Password, Please Try Again", "LOGIN FAILED!");
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-                txtUsername.Focus();
+                /*   +----------+
+                     | COUNT(*) |    
+                     +----------+
+                     |        1 |    row index 0
+                     +----------+    */
+                //dt.Rows[row index][column index]
+                if (int.Parse(dt.Rows[0][0].ToString()) >= 1)
+                {
+                    this.Close();
+                    Thread th = new Thread(openForm);
+                    th.SetApartmentState(ApartmentState.STA);
+                    th.Start();
+
+                }
+                else
+                //if not found output
+                //column index 0
+                /*   +----------+
+                     | COUNT(*) |    
+                     +----------+
+                     |        0 |    row index 0
+                     +----------+    */
+                {
+                    MessageBox.Show("Invalid Username or Password, Please Try Again", "LOGIN FAILED!");
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    txtUsername.Focus();
+                }
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            
             
         }
 
