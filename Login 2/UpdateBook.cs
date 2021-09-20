@@ -58,6 +58,8 @@ namespace Login_2
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Update Successful");
+                new View_Books(true).Show();
+                this.Close();
 
             }
             catch (Exception ex)

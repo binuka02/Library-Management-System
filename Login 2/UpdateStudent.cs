@@ -32,7 +32,8 @@ namespace Login_2
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Update Successful");
-
+                new View_Borrower().Show();
+                this.Close();
             }
             catch (Exception ex)
             {

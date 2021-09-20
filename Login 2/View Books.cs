@@ -33,7 +33,15 @@ namespace Login_2
 
         private void openForm()
         {
-            Application.Run(new Dashboard());
+         
+            if (viewBooksInterface)
+            {
+                Application.Run(new Dashboard());
+            }
+            else
+            {
+                Application.Run(new Issue_Book());
+            }
         }
 
         private void label9_Click(object sender, EventArgs e)

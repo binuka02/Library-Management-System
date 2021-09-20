@@ -30,6 +30,8 @@ namespace Login_2
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblBack = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtStudentName = new System.Windows.Forms.TextBox();
@@ -42,8 +44,6 @@ namespace Login_2
             this.label4 = new System.Windows.Forms.Label();
             this.txtNIC = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,15 +72,38 @@ namespace Login_2
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Cooper Black", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label6.Location = new System.Drawing.Point(56, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(369, 49);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Update Student";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.label2.Location = new System.Drawing.Point(106, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 91);
+            this.label2.TabIndex = 10;
+            // 
             // lblBack
             // 
             this.lblBack.AutoSize = true;
             this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.lblBack.Location = new System.Drawing.Point(386, 603);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(30, 13);
+            this.lblBack.Size = new System.Drawing.Size(43, 17);
             this.lblBack.TabIndex = 8;
             this.lblBack.Text = "Back";
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
@@ -223,37 +246,14 @@ namespace Login_2
             this.label9.TabIndex = 2;
             this.label9.Text = "NIC";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label2.Location = new System.Drawing.Point(106, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 91);
-            this.label2.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Cooper Black", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label6.Location = new System.Drawing.Point(56, 35);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(375, 50);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Update Student";
-            // 
             // UpdateStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 698);
+            this.ClientSize = new System.Drawing.Size(516, 651);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdateStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateStudent";
