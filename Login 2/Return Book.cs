@@ -102,50 +102,57 @@ namespace Login_2
         string date, status;
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            issueID = int.Parse(txtSelectedIssueID.Text);
-            //get data from issuebook table
-            query = "SELECT * FROM issuebook where IssueID=" + issueID  + "";
-            MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
-
-            DataTable set = new DataTable();
-            adapter.Fill(set);
-            bookID = int.Parse(set.Rows[0]["BookID"].ToString());
-            studentID = int.Parse(set.Rows[0]["StudentID"].ToString());
-            date = DateTime.Now.ToString("dd MMMM yyyy");
-
-            //insert into bookstatus table
-            query = "INSERT INTO bookstatus VALUES(" + bookID + "," + studentID + ",'"+date+"','Returned')";
-            MySqlCommand cmd = new MySqlCommand(query, con);
-
-            try
+            if (txtSelectedIssueID.Text == "")
             {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Book Return Successful");
-                query = "UPDATE book SET BookQuantity=BookQuantity+1 WHERE BookID=" + bookID + "";
-                cmd = new MySqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                query = "DELETE FROM issuebook WHERE IssueID=" + issueID + "";
-                cmd = new MySqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                query = "UPDATE student SET NoOfBorrowedBooks=NoOfBorrowedBooks-1 WHERE StudentID="+studentID+"" ;
-                cmd = new MySqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                query = "UPDATE student SET NoOfReturnedBooks=NoOfReturnedBooks+1 WHERE StudentID=" + studentID + "";
-                cmd = new MySqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-
+                MessageBox.Show("Empty Fields");
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.ToString());
-            }
+                try
+                {
+                    issueID = int.Parse(txtSelectedIssueID.Text);
+                    //get data from issuebook table
+                    query = "SELECT * FROM issuebook where IssueID=" + issueID + "";
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+                    DataTable set = new DataTable();
+                    adapter.Fill(set);
+                    bookID = int.Parse(set.Rows[0]["BookID"].ToString());
+                    studentID = int.Parse(set.Rows[0]["StudentID"].ToString());
+                    date = DateTime.Now.ToString("dd MMMM yyyy");
 
-            finally
-            {
-                con.Close();
-                loadData();
+                    //insert into bookstatus table
+                    query = "INSERT INTO bookstatus VALUES(" + bookID + "," + studentID + ",'" + date + "','Returned')";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Book Return Successful");
+                    query = "UPDATE book SET BookQuantity=BookQuantity+1 WHERE BookID=" + bookID + "";
+                    cmd = new MySqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    query = "DELETE FROM issuebook WHERE IssueID=" + issueID + "";
+                    cmd = new MySqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    query = "UPDATE student SET NoOfBorrowedBooks=NoOfBorrowedBooks-1 WHERE StudentID=" + studentID + "";
+                    cmd = new MySqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    query = "UPDATE student SET NoOfReturnedBooks=NoOfReturnedBooks+1 WHERE StudentID=" + studentID + "";
+                    cmd = new MySqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Incorrect Issue ID");
+                }
+
+                finally
+                {
+                    con.Close();
+                    loadData();
+                }
             }
+            
+            
         }
     }
 }
