@@ -190,12 +190,32 @@ namespace Login_2
             
 
         }
+        bool bookIDValidation = true;
+        public bool validationBookID()
+        {
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string selectAll = "SELECT * FROM book where BookID=" + txtSelectedBookID.Text + "";
+            MySqlDataAdapter adapterSelectAll = new MySqlDataAdapter(selectAll, con);
+            DataTable dtSelectAll = new DataTable();
+            
+            try
+            {
+                adapterSelectAll.Fill(dtSelectAll);
+                dtSelectAll.Rows[0]["BookID"].ToString();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         private void View_Books_Load(object sender, EventArgs e)
         {
             MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
             string query = "SELECT * FROM book";
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+            
 
             DataTable set = new DataTable();
             adapter.Fill(set);
@@ -204,31 +224,39 @@ namespace Login_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            bookid = int.Parse(txtSelectedBookID.Text);
-            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
-            string query = "DELETE FROM book WHERE BookID= "+bookid+";";
-            MySqlCommand cmd = new MySqlCommand(query, con);
-            try
+            if (validationBookID())
             {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Deletion BookID = " + bookid + " Sucessful");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                con.Close();
-                query = "SELECT * FROM book";
-                MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+                bookid = int.Parse(txtSelectedBookID.Text);
+                MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+                string query = "DELETE FROM book WHERE BookID= " + bookid + ";";
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Deletion BookID = " + bookid + " Sucessful");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    con.Close();
+                    query = "SELECT * FROM book";
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
 
-                DataTable set = new DataTable();
-                adapter.Fill(set);
-                dataGridBook.DataSource = set;
+                    DataTable set = new DataTable();
+                    adapter.Fill(set);
+                    dataGridBook.DataSource = set;
 
+                }
             }
+            else
+            {
+                MessageBox.Show("Incorrect BookID");
+            }
+            
 
         }
 
@@ -248,10 +276,18 @@ namespace Login_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bookid = Convert.ToInt32(txtSelectedBookID.Text);
-            UpdateBook updateBook = new UpdateBook(bookid);
-            updateBook.Show();
-            this.Hide();
+            if (validationBookID())
+            {
+                bookid = Convert.ToInt32(txtSelectedBookID.Text);
+                UpdateBook updateBook = new UpdateBook(bookid);
+                updateBook.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect BookID");
+            }
+            
 
            
         }
