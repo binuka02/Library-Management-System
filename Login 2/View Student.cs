@@ -62,9 +62,17 @@ namespace Login_2
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            UpdateStudent updateStudent = new UpdateStudent(int.Parse(txtSelectedStudentID.Text));
-            updateStudent.Show();
-            this.Hide();
+            if (validationStudentID())
+            {
+                UpdateStudent updateStudent = new UpdateStudent(int.Parse(txtSelectedStudentID.Text));
+                updateStudent.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect StudentID");
+            }
+            
         }
 
         private void txtStudentID_TextChanged(object sender, EventArgs e)
@@ -82,6 +90,24 @@ namespace Login_2
             dataGridView1.DataSource = set;
             con.Close();
         }
+        public bool validationStudentID()
+        {
+            MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
+            string selectAll = "SELECT * FROM student where StudentID=" + txtSelectedStudentID.Text + "";
+            MySqlDataAdapter adapterSelectAll = new MySqlDataAdapter(selectAll, con);
+            DataTable dtSelectAll = new DataTable();
+
+            try
+            {
+                adapterSelectAll.Fill(dtSelectAll);
+                dtSelectAll.Rows[0]["StudentID"].ToString();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         private void txtStudentName_TextChanged(object sender, EventArgs e)
         {
@@ -90,26 +116,34 @@ namespace Login_2
         int studentID;
         private void button1_Click(object sender, EventArgs e)
         {
-            studentID = int.Parse(txtSelectedStudentID.Text);
-            query = "DELETE FROM student WHERE StudentID="+studentID+"";
-            MySqlCommand cmd = new MySqlCommand(query, con);
+            if (validationStudentID())
+            {
+                studentID = int.Parse(txtSelectedStudentID.Text);
+                query = "DELETE FROM student WHERE StudentID=" + studentID + "";
+                MySqlCommand cmd = new MySqlCommand(query, con);
 
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Deletion Successful");
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Deletion Successful");
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    con.Close();
+                    loadData();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Incorrect StudentID");
             }
-            finally
-            {
-                con.Close();
-                loadData();
-            }
+            
 
 
         }
@@ -128,7 +162,7 @@ namespace Login_2
                 delstudentid = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["StudentID"].Value);
                 txtSelectedStudentID.Text = delstudentid.ToString();
             }
-            catch(Exception ex)
+            catch(Exception)
             {
 
             }

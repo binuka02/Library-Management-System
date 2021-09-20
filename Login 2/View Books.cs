@@ -190,7 +190,6 @@ namespace Login_2
             
 
         }
-        bool bookIDValidation = true;
         public bool validationBookID()
         {
             MySqlConnection con = new MySqlConnection("server=localhost;uid=root;pwd=;database=lbms;SSL Mode=none;");
