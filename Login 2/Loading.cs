@@ -17,7 +17,8 @@ namespace Login_2
         
         public Loading()
         {
-            InitializeComponent();        
+            InitializeComponent();
+            this.Icon = Properties.Resources.hicon;
             ProgressBar1.Value = 0;
         }
 
