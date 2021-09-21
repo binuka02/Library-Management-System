@@ -34,7 +34,8 @@ namespace Login_2
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            
+            txtBookID.Text = "";
+            txtStudentID.Text = "";
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
