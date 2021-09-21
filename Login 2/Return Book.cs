@@ -118,7 +118,7 @@ namespace Login_2
                     adapter.Fill(set);
                     bookID = int.Parse(set.Rows[0]["BookID"].ToString());
                     studentID = int.Parse(set.Rows[0]["StudentID"].ToString());
-                    date = DateTime.Now.ToString("dd MMMM yyyy");
+                    date = DateTime.Now.ToString("yyyy-MM-dd");
 
                     //insert into bookstatus table
                     query = "INSERT INTO bookstatus VALUES(" + bookID + "," + studentID + ",'" + date + "','Returned')";

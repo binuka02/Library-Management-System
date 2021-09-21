@@ -62,7 +62,10 @@ namespace Login_2
 
         private void txtDate_ValueChanged(object sender, EventArgs e)
         {
-            searchData(txtDate.Text, "Date");
+            //MessageBox.Show(txtDate.Text);
+            string date = DateTime.Parse(txtDate.Text).ToString("yyyy-MM-dd");
+            //MessageBox.Show(date);
+            searchData(date, "Date");
         }
 
         private void lblBack_Click(object sender, EventArgs e)
